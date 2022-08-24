@@ -1,0 +1,342 @@
+body{
+    margin: 0%;
+}
+navbar{
+    box-sizing: border-box;
+}
+#header{
+    height: 1vh;
+    background-color: rgb(35,41,44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 2%;
+}
+#nav_logo>a>img{
+    height: 25vh;
+}
+
+#nav_option>ul{
+    display: flex;
+}
+#nav_option>ul>li{
+    margin: 10px 10px;
+    list-style: none;
+}
+#nav_option>ul>li>a{
+text-decoration: none;
+color: white;
+cursor: pointer;
+font-size: 15px;
+}
+#search_nav{
+    /* background-color: white; */
+    border-radius: 20px;
+    background-color: rgb(57,63,66);
+    width: 15%;
+    display: flex;
+    height: 4vh;
+    font-size: 20px;
+    align-items: center;
+}
+#search_bar{
+    border-radius: 20px;
+    font-size: 18px;
+    text-align:center;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(57,63,66);
+    border: none;
+    outline: none;
+}
+#search_nav>i{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#search_nav>i:hover{
+    cursor: pointer;
+}
+#nav_option>ul>li>a:hover{
+    color:azure;
+    border-bottom: 1px solid whitesmoke;
+}
+/* Aside 1 */
+
+/* Aside 2 */
+#aside2{
+    display: block;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#food_type_p{
+    display: grid;
+    grid-template-columns: repeat(3,35%);
+    justify-content: space-around;
+    grid-template-rows: repeat(2,50%);
+    gap: 3% 3%;
+    
+}
+#aside2>#food_type_p>div{
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor:pointer;
+}
+#aside2>#food_type_p>div>img{
+    height: 70%;
+    margin-top: 10%;
+    width: 100%;
+}
+.aside_p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside2_p>p{
+    text-align: center;
+    color: dimgray;
+    font-size: 20px;
+}
+/* Aside 3 sec1 */
+#aside3{
+    display: flex;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+#aside3_sec1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 10px;
+
+}
+#aside3_sec1>h1{
+    color: dimgray;
+}
+#trend_dish{
+    display: grid;
+    grid-template-columns: repeat(2,47%);
+    grid-template-rows: repeat(5,26%);
+    gap:5% 3%;
+}
+#trend_dish>div>img{
+    height: 100%;
+    width: 100%;
+}
+/* aside 3 sec2 */
+#aside3_sec2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#aside3_sec2>div>h1{
+    text-align: center;
+}
+#aside3_cat{
+    color: dimgray;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-content: space-evenly; */
+}
+
+#aside3_cat>ul>li{
+    font-size: 20px;
+    list-style-type: none;
+    padding:10px;
+    align-self: start;
+}
+#aside3_cat>ul>li:hover{
+    color: greenyellow;
+}
+#aside3_sec2>#aside3_secb{
+    display: flex;
+    flex-direction: column;
+}
+#aside3_secb{
+    margin-top: 10px;
+    color: dimgray;
+}
+#aside3_secb>h2{
+    text-align: center;
+    
+}
+#aside3_secb>ul>li{
+    list-style-type: none;
+    font-size:20px;
+    text-align:left;
+    padding: 10px;
+}
+#aside3_secb>ul>li:hover{
+    color:yellowgreen
+}
+/* Aside3 sec c */
+#aside3_secc{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#aside3_secc>h3{
+    color: dimgray;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px; 
+    letter-spacing: 2px;
+}
+#aside3_secc>embed{
+    width: 100%;
+    
+    height: 250px;
+}
+/* aSIDE3_SECD */
+#aside3_secd{
+    margin-top: 20px;
+}
+#aside3_secd>p{
+    color: dimgray;
+    text-align: center;
+    font-size: 15px;
+}
+#aside3_secd>img{
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+/* media query 1 */
+/* FOOTER */
+footer{
+    background-color: rgb(35,41,44);
+    height: 500px;
+    
+}
+footer>h2{
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+footer>ul{
+    display: flex;
+    list-style-type: none;
+    width: 80%;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+footer>ul>li{
+    font-size: 15px;
+    color: dimgray;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+footer>ul>li:hover{
+    color: white;
+}
+#a_logo{
+    display: flex;
+    width: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+#a_logo>i{
+    width: 20%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px;
+    border: 1px solid dimgray;
+}
+#a_logo>i:hover{
+    background-color: yellowgreen;
+}
+#last_foot{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+#last_foot>div{
+    width: 20%;
+    color: dimgray;
+    display: flex;
+    justify-content: space-evenly;
+}
+#last_foot>#last_part2{
+    width: 30%;
+}
+#last_part1>p:nth-child(2):hover{
+    color: azure;
+}
+#last_foot>div:nth-child(2)>p:hover{
+    color: azure;
+}
+@media all and (min-width:600px) and (max-width:900px){
+    #search_nav{
+        width: 35%;
+    }
+    #nav_option>ul{
+        display: none;
+    }
+    #food_type_p{
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        justify-content: space-around;
+        grid-template-rows: repeat(3,30%);
+        gap: 3% 3%;
+        
+    }
+    #aside2>#food_type_p>div{
+        height: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        cursor:pointer;
+    }
+    #aside2>#food_type_p>div>img{
+        height: 70%;
+        margin-top: 10%;
+        width: 100%;
+    }
+    .aside2_p>p{
+        font-size: 15px;
+    }
+}
+
+@media all and (min-width:300px) and (max-width:600px){
+    #search_nav{
+        width: 35%;
+        height: 1.5rem;
+    }
+    #nav_option>ul{
+        display: none;
+    }
+    #food_type_p{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-around;
+        grid-template-rows: repeat(6,15%);
+        row-gap: 3%;
+        
+    }
+    #aside2>#food_type_p>div{
+        height: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        cursor:pointer;
+    }
+    #aside2>#food_type_p>div>img{
+        height: 70%;
+        margin-top: 10%;
+        width: 100%;
+    }
+    .aside2_p>p{
+        font-size: 15px;
+    }
+}
