@@ -1,0 +1,143 @@
+#first_image {
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+}
+
+#first_image>img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.slider_box {
+    width: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#slider {
+    width: 100%;
+    /* margin-top: 50px; */
+    /* border:1px solid red; */
+    /* height: auto; */
+    display: inline-flex;
+    transition: 0.7s;
+    /* position:relative; */
+
+}
+
+#slider img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.indicator {
+    position: absolute;
+    left: 10%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.indicator>span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(201, 198, 198);
+    cursor: pointer;
+}
+
+.active {
+    background-color: white !important;
+}
+
+#middle_section {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    /* padding:20px; */
+    /* border:1px solid; */
+    display: flex;
+    /* padding-left:5px; */
+    /* padding-right: 45px;                */
+}
+
+#middle_section>div {
+    width: 35%;
+    /* border-radius: 20px; */
+    /* border: 1px solid; */
+    margin-right: 13px;
+    margin-top: 5px;
+    padding: 20px;
+}
+
+#middle_section>div>img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(18, 18, 18, 0.4) 5px 5px;
+    /* border: 1px solid; */
+    /* margin-left: 33px; */
+    /* margin-top:5px; */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#shop_by_category {
+    width: 100%;
+    height: auto;
+    /* height:auto; */
+    position: relative;
+    border: 1px solid;
+    padding: 5px;
+
+}
+
+#shop_by_category_poster {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    transition: 0.7s;
+   
+}
+
+#shop_by_category>button {
+    position: absolute;
+    top: 150px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    /* background-color: rgba(77,77,77,0.8); */
+    font-size: 20px;
+    border: none;
+}
+
+#shop_by_category>button:nth-child(2) {
+    left: 20px;
+}
+
+#shop_by_category>button:nth-child(3) {
+    right: 20px;
+}
+
+.categorydata {
+    display: none;
+    /* transition: 0.7s; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+
+}
+
+.pos1 {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+    height: 200px;
+
+}
