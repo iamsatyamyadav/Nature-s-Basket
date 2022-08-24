@@ -1,0 +1,122 @@
+* {
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+#login_cont {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: -2.5%;
+}
+#login_cont>div{
+    display: flex;
+}
+#login_cont>div>p {
+    font-size: 12px;
+}
+#log{
+    /* border: 2px solid black; */
+    margin-left: -5%;
+}
+#log>p{
+    font-size: 12px;
+    /* margin: auto; */
+}
+
+
+#imSel {
+    display: flex;
+    /* border: 3px solid black; */
+}
+#logo{
+width: 280px;
+}
+
+#city {
+    background: #f3f3f3;
+    padding: 2px;
+}
+
+#shop {
+    color: #c96492;
+}
+
+#sButt {
+    background-color: #81ba38;
+    margin-left: -0.3%;
+}
+
+#starB {
+    background-color: #81ba38;
+}
+
+#searchInp {
+    padding: 0.2% 13%;
+}
+
+p {
+    margin: 0;
+}
+
+div.select {
+    min-width: 150px;
+    padding-right: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    border: none;
+    position: relative;
+    background: #f3f3f3;
+}
+
+div.select p {
+    padding: 5px;
+    width: 100%;
+}
+
+div.select:after {
+    content: "▼";
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    font-size: 9px;
+}
+
+div.select .hidden {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .1s;
+    background: white;
+    border: 1px solid #999;
+    z-index: 10;
+    width: 100%;
+}
+
+div.select:hover .hidden {
+    visibility: visible;
+    opacity: 1;
+}
+
+div.select p:hover,
+div.select:hover {
+    background: #80bc36;
+    cursor: pointer;
+}
+
+#cont_option{
+    border: 1px solid rgb(216, 207, 207);
+    width: 80%;
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-evenly;
+}
+#cont_option>p{
+    font-size: 14px;
+}
+.contHov:hover{
+cursor: pointer;
+background-color: rgb(214, 206, 206);
+}
