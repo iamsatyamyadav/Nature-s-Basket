@@ -1,9 +1,9 @@
 function Login(){
     return `        <div id="input_container">
-    <input type="text" class="input" value placeholder="Email Address">
+    <input type="email" class="input" id="Email_log_sy"  placeholder="Email Address">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiZNMaCffhZb_Sxsc6BoEXjstRUYd71HvhfQqC085ZQQbFRFVtTgfSy63GO9x9QI4wADs&usqp=CAU"
         class="input_img" >
-    <input type="text" class="input2" value placeholder="Password">
+    <input type="password" class="input2" id="password_log_sy"  placeholder="Password">
     <img id="input_img2"
         src="https://www.pngitem.com/pimgs/m/511-5116363_key-clipart-pink-pink-key-graphic-transparent-hd.png"
         class="input_img">
