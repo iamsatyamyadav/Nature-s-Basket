@@ -15,3 +15,24 @@ document.getElementById("Lonin_div").innerHTML= Login()
         login_div.style.display = "none"
 
     })
+
+    document.getElementById("Login_But_for_get_Data").addEventListener("click",function(){
+
+        let arr = JSON.parse(localStorage.getItem("User_Data"))||[]
+        
+        arr.forEach((el) => {
+            let Email = document.getElementById("Email_log_sy").value
+            let password = document.getElementById("password_log_sy").value
+
+            if(Email == el.Email && password==el.Password){
+                alert("You are login successfully.")
+            }else{
+                alert("Enter the Valid email and Password.")
+            }
+        });
+
+    })
+
+  
+
+
