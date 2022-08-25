@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        #Register_div {
+            /* border: 0.00002px solid rgb(15, 15, 15); */
+            width: 100%;
+            height: 120px;
+            /* display:none; */
+            background-color: #ededed;
+
+
+        }
+
+        #Hide_but_for_Register {
+            position: relative;
+            margin-left: 95%;
+            margin-top: -200px;
+            border: none;
+        }
+
+        #Hide_but_for_Register>img {
+            width: 50px;
+        }
+
+        #input_containt_for_Register {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            margin: auto;
+            width: 70%;
+            padding-top: 35px;
+        }
+
+        .input1 {
+            width: 300px;
+            height: 50px;
+            margin: 0;
+            padding-left: 40px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        .input2 {
+            width: 300px;
+            height: 50px;
+            margin: 0;
+            padding-left: 50px;
+            margin-left: 80px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        .input3 {
+            width: 300px;
+            height: 50px;
+            margin: 0;
+            padding-left: 50px;
+            margin-left: 80px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        .input_img {
+            position: absolute;
+            bottom: px;
+            left: 10px;
+            width: 25px;
+            height: 25px;
+            right: 10px;
+            top: 48px;
+        }
+
+        #input_img2 {
+            margin-top: px;
+            position: absolute;
+            bottom: 15px;
+            left: 400px;
+            height: 17px;
+            width: 20px;
+            top: 50px;
+
+        }
+        #input_img3 {
+            margin-top: px;
+            position: absolute;
+            bottom: 15px;
+            left: 780px;
+            height: 17px;
+            width: 30px;
+
+        }
+        #Register_but_for_get_Data{
+             font-size: 20px;
+             padding: 12px;
+             margin-left: 40px;
+             background-color: #92be4d;
+             color: #ededed;
+             border: none;
+             cursor: pointer;
+             box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            border-radius: 4px;
+
+        }
+   
+   </style>
+
+</head>
+<body>
+    <div id="Register_div">
+     
+        <div id="input_containt_for_Register">
+            <input type="text" class="input1" id="Name_sy" placeholder="Enter The Name">
+            <img src="https://thumbs.dreamstime.com/b/man-icon-profile-member-user-perconal-symbol-vector-white-isolated-background-141728154.jpg"
+                class="input_img" >
+            <input type="email" class="input2" id="Email_sy" placeholder="Email Address">
+            <img id="input_img2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiZNMaCffhZb_Sxsc6BoEXjstRUYd71HvhfQqC085ZQQbFRFVtTgfSy63GO9x9QI4wADs&usqp=CAU"
+                class="input_img" >
+           
+            <input type="password" class="input3"  id="password_sy"
+            placeholder="Password">
+            <img id="input_img3"
+                src="https://www.pngitem.com/pimgs/m/511-5116363_key-clipart-pink-pink-key-graphic-transparent-hd.png"
+                class="input_img">
+        
+            <button id="Register_but_for_get_Data">Register</button>
+        </div>
+        <button id="Hide_but_for_Register"><img
+                src="https://w7.pngwing.com/pngs/726/537/png-transparent-x-mark-computer-icons-check-mark-x-mark.png"
+                alt=""></button>
+    </div>
+
+    <button id="Register_but">login</button>
+</body>
+</html>
+<!-- <script type="module" src="../scripts/Login1.js"></script> -->
+<script type="module" >
+
+
+document.getElementById("Register_but").addEventListener("click", function () {
+        let login_div = document.getElementById("Register_div")
+        login_div.style.display = "block"
+
+    })
+    document.getElementById("Hide_but_for_Register").addEventListener("click", function () {
+        let login_div = document.getElementById("Register_div")
+        login_div.style.display = "none"
+
+    })
+
+
+    let register = document.getElementById("Register_but_for_get_Data").addEventListener("click",function(){
+function UserData(N,E,P){
+    this.Name = N;
+    this.Email = E;
+    this.Password = P;
+
+}
+let Name = document.getElementById("Name_sy").value;
+let Email = document.getElementById("Email_sy").value;
+let password = document.getElementById("password_sy").value;
+
+
+let A_User_Data = new UserData(Name,Email,password)
+
+console.log(A_User_Data)
+
+let arr = JSON.parse(localStorage.getItem("User_Data"))||[]
+
+
+
+arr.push(A_User_Data)
+
+let forLoc = localStorage.setItem("User_Data",JSON.stringify(arr))
+
+window.location.reload();
+    })
+
+
+</script>
