@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+   
+
+</head>
+
+<body onload="boxes(),trending_boxes(),curated_box(),brandscall()">
+
+    <div class="container">
+        <div id="first_image">
+            <img src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg?v=4&quot"
+                alt="poster">
+        </div>
+
+
+        <div class="slider_box">
+
+            <div id="slider">
+                <img src="images/image1.jpg" alt="image1">
+                <img src="images/image2.jpg" alt="image2">
+                <img src="images/image3.jpg" alt="image3">
+                <img src="images/image4.jpg" alt="image4">
+            </div>
+            <div class="indicator">
+                <span id="btn1" class="active"></span>
+                <span id="btn2"></span>
+                <span id="btn3"></span>
+                <span id="btn4"></span>
+            </div>
+        </div>
+
+        <div id="middle_section">
+            <div><img src="https://www.naturesbasket.co.in/Images/NaturesBasketGifting.jpeg?v=7" alt="Poster1"></div>
+            <div><img src="https://www.naturesbasket.co.in/Images/Japanesecuisine-webbox.png?v=12" alt="Poster2"></div>
+            <div><img src="https://www.naturesbasket.co.in/Images/Gluten-free-web%20box%20banner.png?v=15"
+                    alt="Poster3"></div>
+        </div>
+
+        <h2 style="display:block;margin-top:30px;">SHOP BY CATEGORY</h2>
+
+        <div id="shop_by_category">
+
+            <div id="shop_by_category_poster">
+                <div class="categorydata">
+                    <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/hearthealthyfoodsweb.png" class="pos1"
+                        alt="pos1">
+                    <p class="para">Heart Healthy Food </p>
+                    
+                    <p class="para1">Asparagus Artichokes </p>
+                    
+                    <p class="para2">Avocados Peppers</p>
+                    <p class="para3s">Broccoli Zucchini</p>
+                    <p class="para4">View More</p>
+                
+                </div>
+
+
+                <div class="categorydata">
+                    <img src=" https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png" class="pos1"
+                        alt="pos1">
+                    <p class="para">Meat,Poultry & Sea Food</p>
+                    <p class="para1">Chicken Cuts Lollipops Mince</p>
+                    <p class="para2">Fresh Kebabs Others</p>
+                    <p class="para3">Fish Other Seafood</p>
+                    <p class="para4">View More</p>
+                </div>
+
+
+                <div class="categorydata">
+                    <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/hearthealthyfoodsweb.png" class="pos1"
+                        alt="pos1">
+                    <p class="para">Heart Healthy Food</p>
+                    <p class="para1">Asparagus Artichokes</p>
+                    <p class="para2">Avocados Peppers</p>
+                    <p class="para3">Broccoli Zucchini</p>
+                    <p class="para4">View More</p>
+                </div>
+
+
+                <div class="categorydata">
+                    <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png"
+                        class="pos1" alt="pos1">
+                    <p class="para">Fresh Artisanal Bread</p>
+                    <p class="para1">Buns Croissants Bagels</p>
+                    <p class="para2"> Muffins Cakes Brownies</p>
+                    <p class="para3">Broccoli Zucchini</p>
+                    <p class="para4">View More</p>
+                </div>
+
+                <div class="categorydata">
+                    <img src=" https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png" class="pos1"
+                        alt="pos1">
+                    <p class="para">Daily Essential</p>
+                    <p class="para1">Snacks & Beverages</p>
+                    <p class="para2">Breakfast, Dairy & Bakery</p>
+                    <p class="para3">Staples</p>
+                    <p class="para4">View More</p>
+                </div>
+
+
+                <div class="categorydata">
+                    <img src=" https://gnbdevcdn.s3.amazonaws.com/Images/Category/indiangroceryweb.png" class="pos1"
+                        alt="pos1">
+                    <p class="para"> Indian Grocery</p>
+                    <p class="para1">Salt Sugar Substitutes</p>
+                    <p class="para2">Cooking Spices Powders</p>
+                    <p class="para3"> Oils</p>
+                    <p class="para4">View More</p>
+                </div>
+
+                <div class="categorydata">
+                    <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/hearthealthyfoodsweb.png" class="pos1"
+                        alt="pos1">
+                    <p class="para">Heart Healthy Food</p>
+                    <p class="para1">Asparagus Artichokes</p>
+                    <p class="para2">Avocados Peppers</p>
+                    <p class="para3">Broccoli Zucchini</p>
+                    <p class="para4">View More</p>
+                </div>
+
+                <div class="categorydata">
+                    <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/confectionaryweb.png" class="pos1"
+                        alt="pos1">
+                    <p class="para">Confectionary and patiseire </p>
+                    <p class="para1">Milk Dark Mint Chocolates</p>
+                    <p class="para2"> Cakes, Brownie, Pancake & Mixes</p>
+                    <p class="para3"> Ice-creams & Kulfi</p>
+                    <p class="para4">View More</p>
+                </div>
+
+
+
+
+            </div>
+
+            <button id="leftarrow1" onclick="lefta()">
+                < </button>
+                    <button id="rightarrow2" onclick="righta()">></button>
+
+        </div>
+
+
+
+        <h2 style="display:block;margin-top:30px;">TRENDING OFFERS</h2>
+
+        <div id="trending_offer">
+
+            <div id="trending_offer_poster">
+                <div class="trendingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <!-- <p  class="para90">DELIVERY IN 90 MINUTES</p> -->
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.31.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span> 33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+
+                <div class="trendingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1324506_1_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.32.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add </button>
+                    </div>
+                </div>
+
+
+                <div class="trendingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/89fafabd-6784-4b32-a8e4-cc6b4d26d1b3_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.39.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+
+                <div class="trendingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para" style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.38.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+                <div class="trendingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/a8ecb31c-960f-4e5c-a7b1-5df2c822aeaf_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para" style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.37.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+
+                <div class="trendingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/5e50d332-c96f-4aa0-bed5-2cd48138e3fe_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para" style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.36.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+                <div class="trendingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para" style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.35.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+                <div class="trendingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3 ">Buy @ Rs.34.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+
+                </div>
+            </div>
+            <button id="leftarrow1" onclick="lefta1()">
+                < </button>
+                    <button id="rightarrow1" onclick="righta1()">></button>
+        </div>
+
+
+
+
+        <h2 style="display:block;margin-top:30px;">CURATED FOR YOU</h2>
+
+        <div id="curated_for_you">
+
+            <div id="curated_offer_poster">
+                <div class="curatingdata">
+                    <img src="images/img.jpg"class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.31.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span> 33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+
+                <div class="curatingdata">
+                    <img src="images/img.jpg" class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.32.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add </button>
+                    </div>
+                </div>
+
+
+                <div class="curatingdata">
+                    <img src="images/maggie.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.39.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+
+                <div class="curatingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.38.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+                <div class="curatingdata">
+                    <img src="images/epi.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.37.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+
+                <div class="curatingdata">
+                    <img src="images/des.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.36.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+                <div class="curatingdata">
+                    <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3">Buy @ Rs.35.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+                </div>
+
+                <div class="curatingdata">
+                    <img src="images/epi.jpg"
+                        class="pos1" alt="pos1">
+                    <p class="para"style="color:red;font-size:15px;">DELIVERY IN 90 MINUTES</p>
+                    <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
+                    <p class="para2">1Pc</p>
+                    <p class="para3 ">Buy @ Rs.34.75/-</p>
+                    <div class="buttons_price">
+                        <button>MRP <span class="fa fa-inr">35.0</span></button>
+                        <button><span class="fa fa-inr"></span>33.75</button>
+                        <button>Add</button>
+                    </div>
+
+                </div>
+            </div>
+            <button id="leftarrow2" onclick="lefta2()">
+                < </button>
+                    <button id="rightarrow2" onclick="righta2()">></button>
+        </div>
+
+        <div class="mainslidebox">
+            <div class="slider2">
+                <img src="https://www.naturesbasket.co.in/Images/homepageblogbanner/NB_paneerBlog_banner.jpg"
+                    alt="image1" id="img1">
+
+            </div>
+            <button id="btnarrowleft">
+                < </button>
+                    <button id="buttonarrowright">></button>
+        </div>
+
+        <h2 style="display:block;margin-top:40px;">OUR EVENTS</h2>
+
+        <div id="event">
+            <div id="event1"><img src="https://www.naturesbasket.co.in/Images/PhotoGallery/SanjeevKapoor_at_KolkataGallary.jpg" alt="img1"></div>
+            <div id="event2"><img src="https://d1z88p83zuviay.cloudfront.net/Images/PhotoGallery/BVV_2448.jpg" alt="img2"></div>
+            <div id="event3"><img src="https://d1z88p83zuviay.cloudfront.net/Images/PhotoGallery/BVV_2448.jpg" alt="img3"></div>
+        </div>
+
+        <h2 style="display:block;margin-top:40px;">SHOP BY WORLD BRANDS</h2>
+
+        <div id="brands">
+
+            <div class="brand_shop">
+                <img src="https://d1z88p83zuviay.cloudfront.net/Images/lexlusif.jpg" alt="">
+            </div>
+
+            <div class="brand_shop">
+                <img src="https://d1z88p83zuviay.cloudfront.net/Images/healthy.jpg" alt="">
+            </div>
+
+
+            <div class="brand_shop">
+                <img src="https://d1z88p83zuviay.cloudfront.net/Images/silk.jpg" alt="">
+            </div>
+
+            <div class="brand_shop">
+                <img src="https://d1z88p83zuviay.cloudfront.net/Images/healthy.jpg" alt="">
+            </div>
+
+            <div class="brand_shop">
+                <img src="https://d1z88p83zuviay.cloudfront.net/Images/lexlusif.jpg" alt="">
+            </div>
+
+            <div class="brand_shop">
+                <img src="https://d1z88p83zuviay.cloudfront.net/Images/healthy.jpg" alt="">
+            </div>
+
+            <div class="brand_shop">
+                <img src="https://d1z88p83zuviay.cloudfront.net/Images/davidoff-cafe.jpg" alt="">
+            </div>
+
+            <div class="brand_shop">
+            <img src="https://d1z88p83zuviay.cloudfront.net/Images/lindt.jpg" alt="">
+        </div>
+
+            <button id="btnleftarr" onclick="btnleftarr()"><</button>
+            
+        </div>
+
+
+        <h3 id="heading3" style="display:block;margin-top:30px;">Online Grocery Store India</h3>
+        <p>Nature’s Basket is a grocery store operating in Mumbai, Bangalore and Pune with deliveries to all cities across India including Hyderabad, Delhi, Kolkata, Chennai, Surat and more. We offer a wide range of food products for all your everyday needs and even offer grocery home delivery as well as a grocery shop online for you to purchase from. Our online grocery store has fresh fruits and vegetables, fresh and frozen meats and seafood, a wide range of breads and other packaged bakery products as well as a range of fresh cheeses from around the world. We even have a range of every staple and international cuisine product to meet your needs along with organic products for fresh and packaged food items. With our offerings, we have the best online food shop & online grocery shopping platform available for all your grocery products as well as physical grocery stores in select cities.</p>
+
+        <h3>Best Online Grocery Supermarket India</h3>
+        <p>With stores in Mumbai, Pune and Bangalore and online delivery services, you can now have all your grocery supermarket shopping done online. We have a wide range of grocery products to offer at our stores for you to buy groceries from a channel convenient to you. Choose from fresh produce to packaged goods, buy groceries online and get them delivered straight to your doorstep, thus making it a convenient and quick process. You can pay for the shopping using credit cards, cash, coupons or online banking facility. We are sure to have all the grocery products for your daily dietary needs from regular local Indian brands and products to exotic and international imported ones.</p>
+
+        <h3 >Online Grocery Supermarket Shopping India</h3>
+        <p>With our wide range of groceries available, Nature’s Basket is a large online supermarket and grocery store for all your everyday food needs. We offer you the best quality grocery products which you can buy online and have them delivered to you conveniently. We have our grocery stores in Mumbai, Pune and Bangalore where you can buy groceries and food items. We also have the best online grocery store to shop for fruits and vegetables, meats and seafood, breads and other bakery items as well as cheese and dairy. Order groceries online from the best quality grocery store at best prices.</p>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="index.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+crossorigin="anonymous"></script> -->
