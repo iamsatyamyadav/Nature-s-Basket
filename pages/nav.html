@@ -19,8 +19,8 @@
         </div>
 
         <div id="log">
-            <p>Login</p>
-            <p>Register</p>
+            <p id="log" onclick="log()">Login</p>
+            <p onclick="register()">Register</p>
         </div>
 
     </div>
@@ -28,14 +28,14 @@
     <div id=" imSel">
         <img id="logo" src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2" alt="">
 
-       
 
 
-        <button>
+
+        <button id="bTog">
             <p>
                 <ion-icon name="pencil-outline"></ion-icon>
-            </span>
-            <span>enter pin code</span>
+                </span>
+                <span id="pChange">enter pin code</span>
         </button>
         <select name="select city" id="city">
             <option value="Mumbai">Mumbai</option>
@@ -61,7 +61,7 @@
             </span>
         </button>
 
-        <button id="cartB">
+        <button onclick="cart()" id="cartB">
             <span>
                 <ion-icon name="cart-outline"></ion-icon>
             </span>
@@ -74,7 +74,7 @@
             <input type='hidden' name='some_name_to_form' />
             <div class='hidden'>
 
-                <option value="Gift Hamper">Gift Hamper</option>
+                <p value="Gift Hamper">Gift Hamper</p>
                 <p value="Fruit & Vegetables">Fruit & Vegetables</p>
                 <p value="Cheese,Meat & Fruit Platter">Cheese,Meat & Fruit Platter</p>
                 <p value="Delecatessen &Cheese">Delecatessen &Cheese</p>
@@ -93,9 +93,9 @@
         </div>
 
         <p class="contHov">MY ORDERS</p>
-        <p class="contHov">GIFTING</p>
+        <p onclick="gift()" class="contHov">GIFTING</p>
         <p class="contHov">REWADRS</p>
-        <p class="contHov">BLOG</p>
+        <p onclick="blog()" class="contHov">BLOG</p>
         <p class="contHov">OFFERS</p>
         <p class="contHov">CONNOISSEUR'S SELECTION</p>
         <p class="contHov">BOOK STORE VISIT</p>
@@ -103,6 +103,61 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <div id="pop">
+        <h2>Enter Your Delivery Pincode</h2>
+
+        <input id="pinVal" type="text" placeholder="Enter your pincode">
+        <button onclick="pinChange()" id="ppBtn">Submit</button>
+
+        <p>Entering your delivery pincode will allow us to show you the products available in your area and to ensure
+            timely delivery.</p>
+    </div>
 </body>
 
 </html>
+<script src="../nauseating-fowl-3676/scripts/nav.js"></script>
+
+<script>
+
+let div = document.getElementById("pop");
+let btn = document.getElementById("bTog");
+
+btn.addEventListener("click", () => {
+    if (div.style.display === "none") {
+        div.style.display = "block"
+    } else {
+        div.style.display = "none"
+    }
+})
+
+function pinChange() {
+
+    let NewPin = document.getElementById("pinVal").value;
+
+    let pin = document.getElementById("pChange").innerText = NewPin
+}
+
+function cart(){
+    window.location.href="linkcart.html"
+}
+
+
+
+    function blog(){
+    window.location.href="blogm.html"
+}
+
+function log(){
+    window.location.href="Login.html"
+}
+
+function register(){
+    window.location.href="Register.html"
+}
+
+function gift(){
+    window.location.href="gift.html"
+}
+</script>
