@@ -1,0 +1,731 @@
+#first_image {
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+}
+
+#first_image>img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.slider_box {
+    width: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#slider {
+    width: 100%;
+    /* margin-top: 50px; */
+    /* border:1px solid red; */
+    /* height: auto; */
+    display: inline-flex;
+    transition: 0.7s;
+    /* position:relative; */
+
+}
+
+#slider img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.indicator {
+    position: absolute;
+    left: 10%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.indicator>span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(201, 198, 198);
+    cursor: pointer;
+}
+
+.active {
+    background-color: white !important;
+}
+
+#middle_section {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    /* padding:20px; */
+    /* border:1px solid; */
+    display: flex;
+    /* padding-left:5px; */
+    /* padding-right: 45px;                */
+}
+
+#middle_section>div {
+    width: 35%;
+    /* border-radius: 20px; */
+    /* border: 1px solid; */
+    margin-right: 13px;
+    margin-top: 5px;
+    padding: 20px;
+}
+
+#middle_section>div>img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(18, 18, 18, 0.4) 5px 5px;
+    /* border: 1px solid; */
+    /* margin-left: 33px; */
+    /* margin-top:5px; */
+}
+/* ---------------------------------------------------------------------------- */
+.para{
+    text-align:center;
+    font-weight:bold;
+    margin-top:5px;
+    font-size:20px;
+   
+
+}
+.para1{
+    text-align:center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #f1f1f1;
+   
+    /* background: url("https://www.naturesbasket.co.in/Images/arrows-shop-by.png")no-repeat scroll right 10px ; */
+}
+.para2{
+    text-align:center;
+    border-bottom: 1px solid #f1f1f1;
+    letter-spacing: 1px;
+    
+    /* background: url("https://www.naturesbasket.co.in/Images/arrows-shop-by.png")no-repeat scroll  left 10px; */
+}
+.para3{
+    text-align:center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #f1f1f1;
+    /* background: url("https://www.naturesbasket.co.in/Images/arrows-shop-by.png")no-repeat scroll right 10px ; */
+}
+
+.para4{
+    text-align:center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #f1f1f1;
+    /* background: url("https://www.naturesbasket.co.in/Images/arrows-shop-by.png") no-repeat scroll right 10px; */
+}
+
+h2{
+    display:block;
+    /* margin-top:90px; */
+    text-align: center;
+    /* margin: 80px; */
+    position: relative;
+    /* border-left:1px solid; */
+}
+
+/* h2 {
+    width: 100%;
+    height: 50px;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    background-color: #57585C;
+} */
+
+.world_brand:before{
+    content: '';
+    width: 30%;
+    border-bottom: solid 1px black;
+    position: absolute;
+    left: 60px;
+    /* right:5px; */
+    top: 50%;
+    z-index: 1;
+}
+
+.event_our:before{
+    content: '';
+    width: 30%;
+    border-bottom: solid 1px black;
+    position: absolute;
+    left: 160px;
+    /* right:5px; */
+    top: 50%;
+    z-index: 1;
+}
+h2:after {
+    content: '';
+    width: 30%;
+    border-bottom: solid 1px black;
+    position: absolute;
+    right: 20;
+    /* right:5px; */
+    top: 50%;
+    z-index: 1;
+}
+
+h2:before {
+    content: '';
+    width: 30%;
+    border-bottom: solid 1px black;
+    position: absolute;
+    left: 110px;
+    /* right:5px; */
+    top: 50%;
+    z-index: 1;
+}
+#shop_by_category {
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+    /* height:auto; */
+    position: relative;
+    /* border: 1px solid; */
+    padding: 5px;
+
+}
+
+#shop_by_category_poster {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    transition: 0.7s;
+   
+}
+
+#shop_by_category>button {
+    position: absolute;
+    top: 210px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    /* background-color: rgba(77,77,77,0.8); */
+    font-size: 20px;
+    border: none;
+    font-weight:bold;
+color:white;
+}
+
+#shop_by_category>button:nth-child(2) {
+    left: -15px;
+}
+
+#shop_by_category>button:nth-child(3) {
+    right: -15px;
+}
+
+.categorydata {
+    display: none;
+    /* transition: 0.7s; */
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+
+}
+
+.categorydata:hover{
+    /* height:540px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    /* width:350px;
+    height:400px; */
+}
+
+
+.pos1 {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+    height: 250px;
+    border-radius:20px;
+
+}
+/* 
+.para90{
+    color:red;
+} */
+
+/* --------------------Trending Data Category------------------------------------------------- */
+
+#trending_offer {
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+    /* height:auto; */
+    position: relative;
+    /* border: 1px solid; */
+    padding: 5px;
+}
+
+#trending_offer_poster {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    /* transition: 0.7s; */
+}
+
+.trendingdata{
+    display: none;
+    height:520px;
+/* transition: 0.7s; */
+border-radius:20px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius:20px;
+}
+
+.trendingdata:hover{
+    /* height:540px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    /* width:350px;
+    height:400px; */
+}
+
+#trending_offer>button {
+    position: absolute;
+    top: 210px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    /* background-color: rgba(77,77,77,0.8); */
+    font-size: 20px;
+    border: none;
+    font-weight:bold;
+color:white;
+}
+
+
+#trending_offer>button:nth-child(2) {
+    left: -15px;
+}
+
+#trending_offer>button:nth-child(3) {
+    right: -15px;
+}
+
+
+.buttons_price {
+    /* border:1px solid; */
+    display: flex;
+    /* justify-items:center; */
+    width: 100%;
+    /* padding:7px; */
+    margin: auto;
+    /* margin-left:10px; */
+    
+}
+
+.buttons_price>button:first-child {
+    width: 110px;
+    height: 50px;
+    padding:15px;
+    /* padding-bottom:px; */
+    /* margin-left:5px; */
+    border-radius: 10px;
+    border:none;
+    
+
+}
+.buttons_price>button:nth-child(2){
+    width: 90px;
+    height: 50px;
+    margin-left:5px;
+    padding:15px;
+    border-radius: 10px;
+    border:none;
+}
+.buttons_price>button:nth-child(3){
+    width: 100px;
+    height: 50px;
+    margin-left:5px;
+    padding:15px;
+    border-radius: 10px;
+    background-color: #90bf43;
+    color: white;
+    font-weight: bold;
+    border:none;
+}
+.buttons_price>button>span{
+    text-decoration: line-through;
+
+}
+
+/* -----------------------Curated For You---------------------------------------------- */
+
+
+#curated_for_you {
+    width: 100%;
+    height: auto;
+    /* height:auto; */
+    position: relative;
+    /* border: 1px solid; */
+    padding: 5px;
+}
+
+#curated_offer_poster {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    /* transition: 0.7s; */
+}
+
+.curatingdata{
+    display: none;
+    height:520px;
+    /* transition: 0.7s; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:20px;
+}
+
+
+.curatingdata:hover{
+    /* height:540px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    /* width:350px;
+    height:400px; */
+}
+
+#curated_for_you>button {
+position: absolute;
+top: 220px;
+
+width: 50px;
+height: 50px;
+border-radius: 50px;
+background-color: red;
+/* background-color: rgba(77,77,77,0.8); */
+font-size: 20px;
+border: none;
+font-weight:bold;
+color:white;
+}
+
+
+#curated_for_you>button:nth-child(2) {
+left: -15px;
+}
+
+#curated_for_you>button:nth-child(3) {
+right: -15px;
+}
+
+
+.buttons_price {
+/* border:1px solid; */
+display: flex;
+/* justify-items:center; */
+width: 100%;
+/* padding:7px; */
+margin: auto;
+/* margin-left:10px; */
+
+}
+
+.buttons_price>button:first-child {
+width: 110px;
+height: 50px;
+padding:15px;
+/* padding-bottom:px; */
+/* margin-left:5px; */
+border-radius: 10px;
+border:none;
+
+
+}
+.buttons_price>button:nth-child(2){
+width: 90px;
+height: 50px;
+margin-left:5px;
+padding:15px;
+border-radius: 10px;
+border:none;
+}
+.buttons_price>button:nth-child(3){
+width: 100px;
+height: 50px;
+margin-left:5px;
+padding:15px;
+border-radius: 10px;
+background-color: #90bf43;
+color: white;
+font-weight: bold;
+border:none;
+}
+.buttons_price>button>span{
+text-decoration: line-through;
+
+}
+
+/* ------------------------------------------Sliding-------------------------------*/
+
+
+.mainslidebox {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    border:none;
+    margin-top: 50px;
+    position: relative;
+}
+
+.slider2 {
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid; */
+  
+}
+
+.slider2>img {
+    border-radius:20px;
+    width: 100%;
+    height: 100%;
+    border:none;
+
+}
+
+.mainslidebox>button {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border:none;
+    border-radius:50%;
+    position: absolute;
+    top: 170px;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+}
+
+.mainslidebox>button:nth-child(2) {
+    left: 20px;
+}
+
+.mainslidebox>button:nth-child(3) {
+    right: 20px;
+}
+
+/* ----------------------------------------------------------------------
+ */
+
+ #event{
+    width:100%;
+    height:340px;
+    display:flex;
+    margin-top:30px;
+    /* background:red; */
+    
+}
+
+#event>div{
+    display: block;
+    margin:auto;
+    width:30%;
+    /* margin:10px; */
+    height:300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+#event>div:hover{
+    height:320px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    /* width:350px;
+    height:400px; */
+}
+#event>div>img{
+  
+    margin:auto;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+
+/* -----------------------------brands--------------------------------------------- */
+
+#brands{
+    margin-top:30px;
+}
+.brand_shop{
+    /* width:150px;
+    height:150px; */
+    border-radius:50px;
+}
+.brand_shop>img{
+    width:100%;
+    height:100%;
+    border-radius:60px;
+
+}
+
+
+.brand_shop>img:hover{
+    height:120px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    /* width:350px;
+    height:400px; */
+}
+
+#brands{
+    width:100%;
+    height:auto;
+    display:flex;
+position: relative;
+}
+.brand_shop{
+    width:25%;
+    margin:10px;
+    border-radius: 20px;
+    height:100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    margin-left: 25px;
+    display:none;
+}
+
+.brand_shop>img{
+    width:100%;
+    /* margin:10px; */
+    border-radius: 20px;
+    height:100px;
+}       
+
+#btnleftarr{
+    position: absolute;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    border:none;
+    font-weight:bold;
+    font-size: 15px;
+    top:30px;
+    left:-35px;
+    /* border: none; */
+}
+
+#heading3{
+    margin-top:100px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+#discover_by_category{
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+    /* height:auto; */
+    position: relative;
+    border: 1px solid;
+    padding: 5px;
+
+}
+
+#discover_offer_poster{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  
+   
+}
+.discoverdata{
+    display: none;
+   
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+
+ }  
+
+
+
+#discover_by_category>button {
+    position: absolute;
+    top: 210px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    
+    font-size: 20px;
+    border: none;
+    font-weight:bold;
+color:white;
+}
+
+#discover_by_category>button:nth-child(2) {
+    left: -15px;
+}
+
+#discover_by_category>button:nth-child(3) {
+    right: -15px;
+}
+
+
+/* ------------------------Healthy data-------------------------------------- */
+
+
+/* #health_by_category{
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+    /* height:auto; */
+    /* position: relative; */
+    /* border: 1px solid; */
+    /* padding: 5px; */
+ /* */ 
+/* } */
+
+#health_offer_poster{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  
+   
+}
+.healthydata{
+    display: none;
+   
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+
+ }  
+
+
+
+ /* #health_by_category>button {
+    position: absolute;
+    top: 310px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    
+    font-size: 20px;
+    border: none;
+    font-weight:bold;
+color:white; */
+} 
+
+#discover_by_category>button:nth-child(5) {
+    left: -15px;
+}
+#discover_by_category>button:nth-child(6) {
+    right: -15px;
+}
+/* #health_by_category>button:nth-child(2) {
+    left: -15px;
+}
+
+#health_by_category>button:nth-child(3) {
+    right: -15px;
+} */
+
+
+
