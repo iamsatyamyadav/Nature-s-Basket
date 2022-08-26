@@ -1,0 +1,113 @@
+
+* {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    border: none;
+
+}
+
+#upper_box {
+
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#upper_InnerBox {
+    display: flex;
+
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+#upper_InnerBox>div {
+
+    width: 18%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#upper_InnerBox>div:nth-child(5) {
+
+    width: 28%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+h3 {
+
+    color: #495156;
+}
+
+#upper_InnerBox>div a {
+
+    font-size: 18px;
+    text-decoration: none;
+    color: #6c7981;
+    margin: 2px;
+}
+
+#DOWNLOAD_THE_APP img {
+    margin-top: 20px;
+    display: block;
+    width: 170px;
+    border-width: 0px;
+}
+
+#but_sub {
+    display: block;
+    padding: 10px;
+    background-color: #99c655;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    font-weight: box;
+}
+
+#inp {
+
+    width: 80%;
+    margin: 20px 0px;
+    font-size: 21px;
+    padding: 20px;
+}
+#paymant_apps{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+#paymant_apps p{
+  padding: 30px;
+
+  letter-spacing: 3px;
+}
+#paymant_apps img{
+ width: 50%;
+ height: 50px;
+
+ margin-top: 15px;
+}
+#paymant_apps #img_2_sy {
+ width: 15%;
+ height: 30px;
+
+ margin-top: 27px;
+ align-items: right;
+}
+#paymant_apps #p_sy {
+margin-left: 200px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
