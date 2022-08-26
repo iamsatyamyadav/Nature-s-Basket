@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content-gr {
+            border: 1px solid black;
+            width: 18%;
+        }
+
+        .voucher-div {
+            border: 1px solid #d476ab;
+            width: 90%;
+            padding: 4px;
+            margin-bottom: 4px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .voucher-div:hover,
+        .form-group:hover {
+            background-color: #b71453;
+            color: white;
+        }
+
+        .form-group {
+            border: 1px solid #d476ab;
+            width: 90%;
+            padding: 4px;
+            margin-bottom: 4px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-us_form {
+            background-color: rgb(201, 197, 197);
+        }
+
+        #contact-text {
+            font-size: 15px;
+            font-weight: 1000;
+            text-align: center;
+        }
+
+        #enquiry-form>ul>li>span {
+            color: #b71453;
+            font-size: 16px;
+            font-weight: 800;
+        }
+        #enquiry_but{
+            background-color: #b71453;
+            color: white;
+            margin-left: 14%;
+            padding: 2% 30%;
+        }
+        .downloadPdf{
+            border: 1px solid black;
+            padding: 0% 5%;
+            text-align: center;
+            background-color: #b71453;
+            color: white;
+            text-decoration: none;
+        }
+        a:link{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        #container{
+            width: 70%;
+            margin-left: 22%;
+            margin-top: -42%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 3%;
+        }
+        #container>div{
+            width: 50;
+            text-align: center;
+            /* border: 1px solid green; */
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        }
+        #container>div>img{
+            width: 90%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 5px;
+        }
+        #container>div>div{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #container>div>div>button{
+            margin-left: 5%;
+            padding: 0% 15%;
+            background-color: #81ba38;
+            color: white;
+            border-radius: 8px;
+            margin: 2%;
+            border: none;
+        }
+        #container>div>div>p{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 6px;
+        }
+        #ls>img{
+            width: 100%;
+            margin-top: 5%;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div id="topImage">
+        <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Web_Sup_1_Gift.png" alt="">
+    </div>
+
+    <div id="content-gr">
+        <div>
+            <span>FILTER</span>
+            <div id="brand-gr">
+                <div class="voucher-div">Gift Hampers</div>
+                <div class="voucher-div">Gift Vouchers</div>
+                <div class="voucher-div">E-Gift Voucher</div>
+                <div class="voucher-div">All Hampers</div>
+            </div>
+            <div>Brands</div>
+            <div class="new">
+                <form action="">
+                    <div class="form-group">
+                        <input class="check" type="checkbox">
+                        <label for="Loyka">Loyka</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="check" type="checkbox">
+                        <label for="Ruchoks">Ruchoks</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="check" type="checkbox">
+                        <label for="Natures Basket">Natures Basket</label>
+                    </div>
+                </form>
+
+                <div id="contact-us_form">
+                    <div id="contact-text">CONTACT US FOR CUSTOMIZED GIFTING SOLUTIONS</div>
+                    <div id="enquiry-form">
+                        <ul>
+                            <li>
+                                <select name="" id="">
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                </select>
+                                <input type="text" placeholder="First Name" id="first_name">
+                                <span>*</span>
+                            </li>
+
+                            <li>
+                                <input type="text" placeholder="Last Name">
+                                <span>*</span>
+                            </li>
+
+                            <li>
+                                <input type="text" placeholder="Email Id">
+                                <span>*</span>
+                            </li>
+
+                            <li>
+                                <input type="number" placeholder="Mobile No.">
+                                <span>*</span>
+                            </li>
+
+                            <li>
+                                <select name="" id="add_City">
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Kolkata">Kolkata</option>
+                                </select>
+                                <span>*</span>
+                            </li>
+
+                            <li>
+                                <input type="text" placeholder="Area of Delivery">
+                                <span>*</span>
+                            </li>
+
+                            <li>
+                                <textarea name="enquirytext" id="" cols="24" rows="4">Enquiry</textarea>
+                            </li>
+                        </ul>
+                        <button id="enquiry_but">Submit</button>
+                        <div id="termCheck">
+                            <input type="checkbox" checked>
+                            <span>I agree to receive gifting inquiry call from Natures Basket.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="downloadPdf"> <a
+                        href="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/newsletters/NB_GiftingCatalogue_Web.pdf">DOWNLOAD
+                        GIFTING CATALOGUE</a></div>
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="container"></div>
+    
+    <div id="ls">
+        <img src="images/a.png" alt="">
+    </div>
+</body>
+
+</html>
+<script>
+
+let data = [{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3e8bf9cf-6e74-4a49-912c-2af85d32f56a_425x425.jpg",
+del: "DELIVERY IN 90 MINUTES",
+type: "E - Gift Voucher",
+PRice: "10000 Rs",
+MRP: "MRP ₹10000"
+},
+
+{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/a965ae99-a2c1-45cf-8a69-db181f9a6628_425x425.jpg",
+del: "DELIVERY IN 90 MINUTES",
+type: "E - Gift Voucher",
+PRice: "399 Rs",
+MRP: "MRP ₹399"
+},
+
+{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/c7df8cf5-7dd7-4dad-a554-1f29014e4c15_425x425.jpg",
+del: "DELIVERY IN 90 MINUTES",
+type: " E - Gift Voucher",
+PRice: "399 Rs",
+MRP: "MRP ₹399"
+},
+
+{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/b11f8b98-57c3-41d4-9ddf-32760c651607_425x425.jpg",
+del: " DELIVERY IN 90 MINUTES",
+type: "E - Gift Voucher",
+PRice: "399 Rs",
+MRP: "MRP ₹399"
+},
+{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/c7df8cf5-7dd7-4dad-a554-1f29014e4c15_425x425.jpg",
+del: "DELIVERY IN 90 MINUTES",
+type: " E - Gift Voucher",
+PRice: "399 Rs",
+MRP: "MRP ₹399"
+},
+]
+
+let content=document.getElementById("container");
+
+function append(){
+    data.forEach(function(el){
+    let card=document.createElement("div");
+
+    let poster=document.createElement("img");
+    poster.src=el.img;
+
+    let D=document.createElement("p");
+    D.innerText=el.del;
+
+    let T=document.createElement("p");
+    T.innerText=el.type;
+
+    let price=document.createElement("p");
+    price.innerText=el.PRice;
+
+    let mrp=document.createElement("p");
+    mrp.innerText=el.MRP;
+
+    let but_div=document.createElement("div");
+
+    let but=document.createElement("button");
+    but.innerText="Add";
+    but.addEventListener("click",function(){
+        console.log(el)
+    })
+
+    but_div.append(mrp,but)
+
+    card.append(poster,D,T,price,but_div);
+
+    container.append(card)
+})
+}
+
+append()
+
+</script>
+
+
