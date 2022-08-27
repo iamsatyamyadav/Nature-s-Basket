@@ -7,7 +7,8 @@ document.getElementById("Footer_part_By_SY").innerHTML= Footer()
 // copy this code in the bottom IN HTML file
 
 
-{/* <footer id="Footer_part_By_SY"></footer> */}
+{/* <footer id="Footer_part_By_SY"></footer>
+import { Footer } from "../components/Footer.js"; */}
 
 
 
