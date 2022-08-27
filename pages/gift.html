@@ -276,9 +276,10 @@ MRP: "MRP ₹399"
 ]
 
 let content=document.getElementById("container");
+let cartData=JSON.parse(localStorage.getItem("cartData")||[];
 
 function append(){
-    data.forEach(function(el){
+    data.forEach(function(el,i){
     let card=document.createElement("div");
 
     let poster=document.createElement("img");
@@ -301,7 +302,8 @@ function append(){
     let but=document.createElement("button");
     but.innerText="Add";
     but.addEventListener("click",function(){
-        console.log(el)
+        cartData.push(i);
+localStorage.setItem("cartData",JSON.stringfy(cartData));
     })
 
     but_div.append(mrp,but)
