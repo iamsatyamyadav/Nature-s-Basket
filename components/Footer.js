@@ -341,3 +341,11 @@ function Footer(){
 }
 
 export {Footer}
+// Cpoy this into js file
+
+// import { Footer } from "../components/Footer.js";
+// document.getElementById("Footer_part_By_SY").innerHTML= Footer()
+
+// copy this into html page
+//  <footer id="Footer_part_By_SY"></footer>
+
