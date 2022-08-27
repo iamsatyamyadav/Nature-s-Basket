@@ -25,7 +25,7 @@ if(counter==img.length)
 }
 
 slider.append(image);
-},2000);
+},1000);
 
 
 
@@ -35,7 +35,7 @@ let btn3=document.querySelector("#btn3");
 let btn4=document.querySelector("#btn4");
 
 btn1.onclick=function(){
-    slider.style.transform="translateX(0px)";
+    // slider.style.transform="translateX(0px)";
     btn1.classList.add("active");
     btn2.classList.remove("active");
     btn3.classList.remove("active");
@@ -43,14 +43,14 @@ btn1.onclick=function(){
 }
 
 btn2.onclick=function(){
-    slider.style.transform="translateX(-100%)";
+    // slider.style.transform="translateX(-100%)";
     btn1.classList.remove("active");
     btn2.classList.add("active");
     btn3.classList.remove("active");
     btn4.classList.remove("active");
 }
 btn3.onclick=function(){
-    slider.style.transform="translateX(-200%)";
+    // slider.style.transform="translateX(-200%)";
     btn1.classList.remove("active");
     btn2.classList.remove("active");
     btn3.classList.add("active");
@@ -58,7 +58,7 @@ btn3.onclick=function(){
 }
 
 btn4.onclick=function(){
-    slider.style.transform="translateX(-300%)";
+    // slider.style.transform="translateX(-300%)";
     btn1.classList.remove("active");
     btn2.classList.remove("active");
     btn3.classList.remove("active");
@@ -68,79 +68,147 @@ btn4.onclick=function(){
 // .............................................................................................
 // .............................................................................................
     let shop_by_category_poster=document.querySelector("#shop_by_category_poster");
+    let arraylocal=JSON.parse(localStorage.getItem('addtomyorder'))||[];
 
     let arraydata=[
         {
-            image:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/hearthealthyfoodsweb.png",
-            title:"Heart Healthy Food",
-            category1:"Asparagus Artichokes",
-            category2:"Avocados Peppers",
-            category3:"Broccoli Zucchini",
-            view:"View All",
+            image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/1324506_1_425x425.jpg",
+            title:"DELIVERY IN 90 MINUTES",
+            title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
+            pc:"1Pc",
+            price:"Buy @ Rs.32.75/-"
         },
         {
-            image:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png",
-            title:"Meat,Poultry & Sea Food",
-            category1:"Chicken Cuts Lollipops Mince",
-            category2:"Fish Other Seafood",
-            category3:"Fresh Kebabs Others",
-            view:"View All",
+            image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/89fafabd-6784-4b32-a8e4-cc6b4d26d1b3_425x425.jpg",
+            title:"DELIVERY IN 90 MINUTES",
+            title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
+            pc:"1Pc",
+            price:"Buy @ Rs.39.75/-"
         },
         {
-            image:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png",
-            title:"Fresh Artisanal Bread",
-            category1:"Breadsticks Crostinni Lavache",
-            category2:"Buns Croissants Bagels",
-            category3:"Muffins Cakes Brownies",
-            view:"View All",
+            image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg",
+            title:"DELIVERY IN 90 MINUTES",
+            title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
+            pc:"1Pc",
+            price:"Buy @ Rs.38.75/-"
         },
         {
-            image:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png",
-            title:"Daily Essential",
-            category1:"Snacks & Beverages",
-            category2:"Breakfast, Dairy & Bakery",
-            category3:"Staples",
-            view:"View All",
+            image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/a8ecb31c-960f-4e5c-a7b1-5df2c822aeaf_425x425.jpg",
+            title:"DELIVERY IN 90 MINUTES",
+            title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
+            pc:"1Pc",
+            price:"Buy @ Rs.37.75/-"
         },
         {
-            image:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/indiangroceryweb.png",
-            title:"Indian Grocery",
-            category1:"Salt Sugar Substitutes",
-            category2:"Cooking Spices Powders",
-            category3:"Oils",
-            view:"View All",
+            image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/5e50d332-c96f-4aa0-bed5-2cd48138e3fe_425x425.jpg",
+            title:"DELIVERY IN 90 MINUTES",
+            title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
+            pc:"1Pc",
+            price:"Buy @ Rs.38.75/-"
         },
 
         {
-            image:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/confectionaryweb.png",
-            title:"Confectionary and patiseire ",
-            category1:"Milk Dark Mint Chocolates",
-            category2:"Cakes, Brownie, Pancake & Mixes",
-            category3:"Ice-creams & Kulfi",
-            view:"View All",
+            image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg",
+            title:"DELIVERY IN 90 MINUTES",
+            title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
+            pc:"1Pc",
+            price:"Buy @ Rs.35.75/-"
         },
 
         {
-            image:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png",
-            title:"Daily Essential",
-            category1:"Snacks & Beverages",
-            category2:"Breakfast, Dairy & Bakery",
-            category3:"Staples",
-            view:"View All",
-        },
-
-        {
-            image:"https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png",
-            title:"Meat,Poultry & Sea Food",
-            category1:"Chicken Cuts Lollipops Mince",
-            category2:"Fish Other Seafood",
-            category3:"Fresh Kebabs Others",
-            view:"View All",
+            image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg",
+            title:"DELIVERY IN 90 MINUTES",
+            title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
+            pc:"1Pc",
+            price:"Buy @ Rs.34.75/-"
         },
     ];
 
     // console.log(arraydata.length);
+    //Add to my order
 
+    let Add_to_myorder=document.querySelector(".Add_to_myorder");
+    let Add_to_myorder1=document.querySelector(".Add_to_myorder1");
+    let Add_to_myorder2=document.querySelector(".Add_to_myorder2");
+    let Add_to_myorder3=document.querySelector(".Add_to_myorder3");
+    let Add_to_myorder4=document.querySelector(".Add_to_myorder4");
+    let Add_to_myorder5=document.querySelector(".Add_to_myorder5");
+    let Add_to_myorder6=document.querySelector(".Add_to_myorder6");
+
+
+    Add_to_myorder.addEventListener("click",function(){
+
+        // arraydata.forEach(function(){
+            arraylocal.push(arraydata[0]);
+            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            // console.log(arraylocal);
+        // })
+        
+    })
+
+    Add_to_myorder1.addEventListener("click",function(){
+
+        // arraydata.forEach(function(){
+            arraylocal.push(arraydata[1]);
+            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            // console.log(arraylocal);
+        // })
+        
+    })
+    Add_to_myorder2.addEventListener("click",function(){
+
+        // arraydata.forEach(function(){
+            arraylocal.push(arraydata[2]);
+            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            // console.log(arraylocal);
+        // })
+        
+    })
+    Add_to_myorder3.addEventListener("click",function(){
+
+        // arraydata.forEach(function(){
+            arraylocal.push(arraydata[3]);
+            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            // console.log(arraylocal);
+        // })
+        
+    })
+    Add_to_myorder4.addEventListener("click",function(){
+
+        // arraydata.forEach(function(){
+            arraylocal.push(arraydata[4]);
+            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            // console.log(arraylocal);
+        // })
+        
+    })
+    Add_to_myorder5.addEventListener("click",function(){
+
+        // arraydata.forEach(function(){
+            arraylocal.push(arraydata[5]);
+            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            // console.log(arraylocal);
+        // })
+        
+    })
+
+    Add_to_myorder6.addEventListener("click",function(){
+
+        // arraydata.forEach(function(){
+            arraylocal.push(arraydata[6]);
+            // console.log(arraylocal);
+            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+        // })
+        
+
+    })
+    console.log(arraylocal);
+
+    // localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+
+    // ---------------------------------------------------------------------------------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------------
     //category data...................................................................
     
     let div1=document.querySelectorAll(".categorydata");
@@ -369,7 +437,7 @@ for(let i=0;i<=3;i++)
 let discover=document.querySelectorAll(".discoverdata");
 
 let healthy=document.querySelectorAll(".healthydata");
-console.log(healthy);
+// console.log(healthy);
 let healthy_offer=document.querySelector("#healthy_offer");
 
 let organic_offer=document.querySelector("#organic_offer");

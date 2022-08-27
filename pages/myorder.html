@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+    .container{
+        /* border: 1px solid; */
+        }
+
+    .row{
+        margin-left: 10px;
+        /* border: 1px solid; */
+        /* margin-top: 30px; */
+        width:70%;
+        height:auto;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-gap:10px;
+    }
+    .checkout
+    {
+        width:100%;
+        display: block;
+        margin:auto;
+        margin-top:30px;
+        height:80px;
+        padding-top: 5px;
+        background-color: rgb(43, 98, 43);
+        box-shadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px";
+
+    }
+
+    .checkout>button{
+        
+        display:block;
+        margin:auto;
+        border: none;
+        width:300px;
+        padding:10px;
+        margin-top:15px;
+        border-radius: 20px;
+        color:black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h2{
+        margin-left:50px;
+        color:red;
+        font-style: italic;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+    #main{
+        width:100%;
+        display:flex;
+        margin-top: 30px;
+
+    }
+    .sidebar{
+        height:370px;
+        padding:10px;
+        width:20%;
+        /* border:1px solid; */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+        /* margin-top: 30px; */
+    }
+    .sidebar>p{
+        /* background-color: gray; */
+        border-top-width: 15px;
+        margin-top: 10px;
+        text-align: center;
+        border-bottom: 1px solid rgb(159, 157, 157);
+    }
+
+    .sidebar>p:hover{
+        cursor: pointer;
+        background-color: rgb(222, 76, 76);
+        height:30px;
+    }
+    .sidebar>p>i{
+        /* margin-left: 20px;
+         */
+         float:right;
+    }
+    pre{
+        margin-top: 30px;
+        margin-left:30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: brown;
+    }
+</style>
+</head>
+<body onload="printdata()">
+
+    <div class="container">
+
+        <h2>My Order</h2>
+        <pre>Home > My Order</pre>
+        <div id="main">
+            
+        <div class="sidebar">
+            <p><a href="accountdetail.html"> Account Details</a> <i class="fa fa-caret-right"></i></p>
+            <p>Address Book<i class="fa fa-caret-right"></i></p>
+            <p>My Favourite<i class="fa fa-caret-right"></i></p>
+            <p>My Order<i class="fa fa-caret-right"></i></p>
+            <p>My Reward<i class="fa fa-caret-right"></i></p>
+            <p>My Wallet<i class="fa fa-caret-right"></i></p>
+            <p>My Membership<i class="fa fa-caret-right"></i></p>
+            <p>My NBCash<i class="fa fa-caret-right"></i></p>
+
+        </div>
+        <div class="row">
+
+        </div>
+        </div>
+
+        <div class="checkout">
+            <button>Checkout</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script src="../scripts/myorder.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+crossorigin="anonymous"></script> -->
