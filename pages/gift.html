@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/Footer.css">
     <style>
         #content-gr {
             border: 1px solid black;
@@ -232,11 +233,12 @@
 
     <div id="ls">
         <img src="images/a.png" alt="">
-    </div>
+    </div><footer id="Footer_part_By_SY"></footer>
 </body>
 
 </html>
 <script>
+
 
     let data = [{
         img:
@@ -500,9 +502,91 @@
                 cartData.push(data[i]);
                 localStorage.setItem("cartData", JSON.stringify(cart_Data));
 
+let data = [{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3e8bf9cf-6e74-4a49-912c-2af85d32f56a_425x425.jpg",
+del: "DELIVERY IN 90 MINUTES",
+type: "E - Gift Voucher",
+PRice: "10000 Rs",
+MRP: "MRP ₹10000"
+},
+
+{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/a965ae99-a2c1-45cf-8a69-db181f9a6628_425x425.jpg",
+del: "DELIVERY IN 90 MINUTES",
+type: "E - Gift Voucher",
+PRice: "399 Rs",
+MRP: "MRP ₹399"
+},
+
+{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/c7df8cf5-7dd7-4dad-a554-1f29014e4c15_425x425.jpg",
+del: "DELIVERY IN 90 MINUTES",
+type: " E - Gift Voucher",
+PRice: "399 Rs",
+MRP: "MRP ₹399"
+},
+
+{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/b11f8b98-57c3-41d4-9ddf-32760c651607_425x425.jpg",
+del: " DELIVERY IN 90 MINUTES",
+type: "E - Gift Voucher",
+PRice: "399 Rs",
+MRP: "MRP ₹399"
+},
+{
+img:
+"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/c7df8cf5-7dd7-4dad-a554-1f29014e4c15_425x425.jpg",
+del: "DELIVERY IN 90 MINUTES",
+type: " E - Gift Voucher",
+PRice: "399 Rs",
+MRP: "MRP ₹399"
+},
+]
+
+let content=document.getElementById("container");
+let cart_data=JSON.parse(localStorage.getItem("cartData"))||[];
+
+function append(){
+    data.forEach(function(el,i){
+    let card=document.createElement("div");
+
+    let poster=document.createElement("img");
+    poster.src=el.img;
+
+    let D=document.createElement("p");
+    D.innerText=el.del;
+
+    let T=document.createElement("p");
+    T.innerText=el.type;
+
+    let price=document.createElement("p");
+    price.innerText=el.PRice;
+
+    let mrp=document.createElement("p");
+    mrp.innerText=el.MRP;
+
+    let but_div=document.createElement("div");
+
+    let but=document.createElement("button");
+    but.innerText="Add";
+    but.addEventListener("click",function(){
+
+        cartData.push(data[i]);
+localStorage.setItem("cartData",JSON.stringify(cart_Data));
+
         console.log(i)
         cart_data.push(data[i]);
 localStorage.setItem("cartData",JSON.stringify(cart_data));
+
+
+    })
+
+    but_div.append(mrp,but)
+
 
             })
 
@@ -510,10 +594,15 @@ localStorage.setItem("cartData",JSON.stringify(cart_data));
 
             card.append(poster, D, T, price, but_div);
 
+
             container.append(card)
         })
     }
 
     append()
+
+</script>
+<script type="module" src="../scripts/Footer.js"></script>
+
 
 </script>
