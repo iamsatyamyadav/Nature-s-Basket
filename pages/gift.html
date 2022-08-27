@@ -302,8 +302,14 @@ function append(){
     let but=document.createElement("button");
     but.innerText="Add";
     but.addEventListener("click",function(){
+<<<<<<< Updated upstream
         cartData.push(data[i]);
 localStorage.setItem("cartData",JSON.stringify(cart_Data));
+=======
+        console.log(i)
+        cart_data.push(data[i]);
+localStorage.setItem("cartData",JSON.stringify(cart_data));
+>>>>>>> Stashed changes
     })
 
     but_div.append(mrp,but)

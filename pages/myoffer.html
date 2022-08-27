@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Offers</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+        #boundaryy{
+            width:90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            row-gap: 30px;
+            column-gap:10px;
+            /* border:1px solid red; */
+            margin-left: 50px;
+            margin-top: 30px;
+            font-family: cursive;
+            /* margin-top: 10px; */
+
+        }
+        #boundaryy>div:hover{
+            /* border:1px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        .imagegift{
+            /* border:5px solid red; */
+            width:280px;
+            border-radius: 20px;
+        }
+        #boundaryy>div{
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .cartthing{
+            /* display: block;
+            margin-left:30px; */
+            text-align: center;
+            width:100px;
+            cursor: pointer;
+        }
+        #headgift{
+             /* border:10px solid red;  */
+            font-family: Metal Mania;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .tagsgift{
+            /* border:1px solid red; */
+            /* border:1px solid red; */
+            background-image: url(https://i.pinimg.com/originals/80/ff/69/80ff69f319daa945a850b4efe621c19a.jpg);
+            color:#f09d45;
+            font-size: 20px;
+            width:180px;
+            height: 40px;
+            text-align: center;
+            font-family: Raleway;
+            border-radius: 10px;
+            border:2px solid rgb(191, 186, 186);
+        }
+        #filterthings{
+            /* border:2px solid red; */
+            margin-top: 10px;
+            margin-right: 100px;
+            height: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            width: 500px;
+        }
+        /* .span1gift{
+    margin: 1px 0;
+   border:1px solid red;
+    margin-left: 50px;
+    font-size: 24px;
+    color: #959595;
+    width:600px
+    /* display: flex;
+    justify-content: space-evenly; */
+    /* } */
+  /* #achagift,#acha1gift{
+    padding-right: 0px; */
+       
+      #achagift{
+        /* border:5px solid red; */
+        width:20px;
+        margin-left: 110px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: cursive;
+        font-style: italic;
+      }
+      #ico{
+        /* border:10px solid red; */
+        margin-left: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div class="span1gift">
+        <span style="cursor: pointer;"id="achagift" class="span1gift"><a style="outline:none; text-decoration: none;
+            color: black;"
+             href="index.html">Home</a>   <span id="ico">&nbsp;&nbsp;&gt;&nbsp</span>
+        <span id=" acha1gift" class="span1gift">My Offers</span>
+</div>
+    <div id="headgift">
+    <span style="width:300px;height:50px ;font-size:50px;margin-left: 100px;margin-bottom: 0px;padding:0px">
+        My Offers</span>
+        <div id="filterthings">
+        <select class="tagsgift" id="fill" onchange="gofilter()">
+        <option value="">Filter by price</option>
+        <option value="5000">Rs 0-5000</option>
+        <option value="10000">Rs 5000-10000</option>
+        <option value="15000">Rs 10000 above</option>
+        </select>
+        <select  class="tagsgift" name="sort" id="sort">
+            <option value="0">Sort by</option>
+            <option value="1">Low to High</option>
+            <option value="2">High to Low</option>
+        </select>
+        <!-- <input class="tagsgift"> -->
+    </div>
+    </div>
+    <div id="boundaryy">
+     
+    </div>
+</body>
+</html>
+<script src="myoffer.js">
+
+</script>
