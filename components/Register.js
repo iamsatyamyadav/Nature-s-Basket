@@ -23,3 +23,15 @@ function Register(){
 
 
 export default Register
+
+// FOR Your Help Copy this code
+
+// this is for HTML page
+{/* <button id="Register_but">Register</button> */}
+
+// this is for Js file
+
+// import Register from "../components/Register.js"
+
+// document.getElementById("Register_div").innerHTML= Register()
+
