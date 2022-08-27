@@ -206,7 +206,8 @@ h2:before {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: red;
+    background-color: white;
+    box-shadow:box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /* background-color: rgba(77,77,77,0.8); */
     font-size: 20px;
     border: none;
@@ -215,11 +216,11 @@ color:white;
 }
 
 #shop_by_category>button:nth-child(2) {
-    left: -15px;
+    left: -55px;
 }
 
 #shop_by_category>button:nth-child(3) {
-    right: -15px;
+    right: -55px;
 }
 
 .categorydata {
@@ -291,7 +292,8 @@ border-radius:20px;
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: red;
+    background-color: white;
+    box-shadow:box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /* background-color: rgba(77,77,77,0.8); */
     font-size: 20px;
     border: none;
@@ -301,11 +303,11 @@ color:white;
 
 
 #trending_offer>button:nth-child(2) {
-    left: -15px;
+    left: -55px;
 }
 
 #trending_offer>button:nth-child(3) {
-    right: -15px;
+    right: -55px;
 }
 
 
@@ -397,7 +399,9 @@ top: 220px;
 width: 50px;
 height: 50px;
 border-radius: 50px;
-background-color: red;
+background-color: white;
+box-shadow:box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/* color:red; */
 /* background-color: rgba(77,77,77,0.8); */
 font-size: 20px;
 border: none;
@@ -407,11 +411,11 @@ color:white;
 
 
 #curated_for_you>button:nth-child(2) {
-left: -15px;
+left: -55px;
 }
 
 #curated_for_you>button:nth-child(3) {
-right: -15px;
+right: -55px;
 }
 
 
@@ -617,7 +621,7 @@ position: relative;
     margin-top:30px;
     /* height:auto; */
     position: relative;
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 5px;
 
 }
@@ -648,7 +652,8 @@ position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: red;
+    background-color: white;
+    box-shadow:box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
     font-size: 20px;
     border: none;
@@ -657,11 +662,11 @@ color:white;
 }
 
 #discover_by_category>button:nth-child(2) {
-    left: -15px;
+    left: -55px;
 }
 
 #discover_by_category>button:nth-child(3) {
-    right: -15px;
+    right: -55px;
 }
 
 
@@ -682,6 +687,7 @@ color:white;
 #health_offer_poster{
 
     display: grid;
+    border:none;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
@@ -714,10 +720,10 @@ color:white; */
 } 
 
 #discover_by_category>button:nth-child(5) {
-    left: -15px;
+    left: -50px;
 }
 #discover_by_category>button:nth-child(6) {
-    right: -15px;
+    right: -55px;
 }
 /* #health_by_category>button:nth-child(2) {
     left: -15px;

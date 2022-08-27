@@ -19,25 +19,31 @@
         width:100%;
         height:auto;
         display:flex;
+        border:none;
         /* border: 1px solid; */
 
     }
     .categorybtn>div{
-        border: 1px solid;
+        /* border: 1px solid; */
         margin:auto;
+        margin: 5px;;
         width:25%;
         height:50px;
         background-color: rgb(177, 174, 174);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-weight: bold;
         padding-top: 7px;
         text-align: center;
+        cursor: pointer;
     }
+
 </style>
    
 
 </head>
 
 <body onload="boxes(),trending_boxes(),curated_box(),brandscall(),discover_box()">
-
+<h3><a href="../pages/myorder.html">Myorder</a></h3>
     <div class="container">
         <div id="first_image">
             <img src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg?v=4&quot"
@@ -166,8 +172,8 @@
             </div>
 
             <button id="leftarrow1" onclick="lefta()">
-                < </button>
-                    <button id="rightarrow2" onclick="righta()">></button>
+                <i class="fa fa-angle-double-left" style="font-size:48px;color:red"></i></button>
+                    <button id="rightarrow2" onclick="righta()"><i class="fa fa-angle-double-right" style="font-size:48px;color:red"></i></button>
 
         </div>
 
@@ -178,17 +184,17 @@
         <div id="trending_offer">
 
             <div id="trending_offer_poster">
-                <div class="trendingdata">
+                <div class="trendingdata" id="trend1">
                     <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg"
                         class="pos1" alt="pos1">
-                    <!-- <p  class="para90">DELIVERY IN 90 MINUTES</p> -->
+                    <p  class="para90">DELIVERY IN 90 MINUTES</p>
                     <p class="para1">Mamie Yova Lychee Stirred Yoghurt 90G</p>
                     <p class="para2">1Pc</p>
                     <p class="para3">Buy @ Rs.31.75/-</p>
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
-                        <button><span class="fa fa-inr"></span> 33.75</button>
-                        <button>Add</button>
+                        <button ><span class="fa fa-inr"></span> 33.75</button>
+                        <button >Add</button>
                     </div>
                 </div>
 
@@ -203,7 +209,7 @@
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
                         <button><span class="fa fa-inr"></span>33.75</button>
-                        <button>Add </button>
+                        <button class="Add_to_myorder">Add </button>
                     </div>
                 </div>
 
@@ -218,7 +224,7 @@
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
                         <button><span class="fa fa-inr"></span>33.75</button>
-                        <button>Add</button>
+                        <button class="Add_to_myorder1" >Add</button>
                     </div>
                 </div>
 
@@ -233,7 +239,7 @@
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
                         <button><span class="fa fa-inr"></span>33.75</button>
-                        <button>Add</button>
+                        <button class="Add_to_myorder2" >Add</button>
                     </div>
                 </div>
 
@@ -247,7 +253,7 @@
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
                         <button><span class="fa fa-inr"></span>33.75</button>
-                        <button>Add</button>
+                        <button class="Add_to_myorder3">Add</button>
                     </div>
                 </div>
 
@@ -262,7 +268,7 @@
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
                         <button><span class="fa fa-inr"></span>33.75</button>
-                        <button>Add</button>
+                        <button class="Add_to_myorder4">Add</button>
                     </div>
                 </div>
 
@@ -276,7 +282,7 @@
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
                         <button><span class="fa fa-inr"></span>33.75</button>
-                        <button>Add</button>
+                        <button class="Add_to_myorder5">Add</button>
                     </div>
                 </div>
 
@@ -290,14 +296,14 @@
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
                         <button><span class="fa fa-inr"></span>33.75</button>
-                        <button>Add</button>
+                        <button class="Add_to_myorder6">Add</button>
                     </div>
 
                 </div>
             </div>
             <button id="leftarrow1" onclick="lefta1()">
-                < </button>
-                    <button id="rightarrow1" onclick="righta1()">></button>
+                <i class="fa fa-angle-double-left" style="font-size:48px;color:red"></i></button>
+                    <button id="rightarrow1" onclick="righta1()"><i class="fa fa-angle-double-right" style="font-size:48px;color:red"></i></button>
         </div>
 <!-- ----------------------------------DISCOVER MORE--------------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------------------- -->
@@ -432,8 +438,8 @@
                 </div>
             </div>
             <button id="leftarrow3" onclick="lefta3()">
-                < </button>
-                    <button id="rightarrow3" onclick="righta3()">></button>
+                <i class="fa fa-angle-double-left" style="font-size:48px;color:red"></i></button>
+                    <button id="rightarrow3" onclick="righta3()"><i class="fa fa-angle-double-right" style="font-size:48px;color:red"></i></button>
 
 
             <div id="health_offer_poster">
@@ -561,8 +567,8 @@
                 </div>
             </div>
             <button id="leftarrow4" onclick="lefta4()" style="display:none">
-                < </button>
-                    <button id="rightarrow4" onclick="righta4()" style="display:none">></button>
+                <i class="fa fa-angle-double-left" style="font-size:48px;color:red"></i> </button>
+                    <button id="rightarrow4" onclick="righta4()" style="display:none"><i class="fa fa-angle-double-right" style="font-size:48px;color:red"></i></button>
            
         </div>
 
@@ -701,14 +707,14 @@
                     <div class="buttons_price">
                         <button>MRP <span class="fa fa-inr">35.0</span></button>
                         <button><span class="fa fa-inr"></span>33.75</button>
-                        <button>Add</button>
+                        <button id="add_to_my_order">Add</button>
                     </div>
 
                 </div>
             </div>
             <button id="leftarrow2" onclick="lefta2()">
-                < </button>
-                    <button id="rightarrow2" onclick="righta2()">></button>
+                <i class="fa fa-angle-double-left" style="font-size:48px;color:red"></i> </button>
+                    <button id="rightarrow2" onclick="righta2()"> <i class="fa fa-angle-double-right" style="font-size:48px;color:red"></i></button>
         </div>
 
         <div class="mainslidebox">
@@ -718,8 +724,8 @@
 
             </div>
             <button id="btnarrowleft">
-                < </button>
-                    <button id="buttonarrowright">></button>
+                <i class="fa fa-angle-double-left" style="font-size:48px;color:red"></i></button>
+                    <button id="buttonarrowright"><i class="fa fa-angle-double-right" style="font-size:48px;color:red"></i></button>
         </div>
 
         <h2 style="display:block;margin-top:40px;" class="event_our">OUR EVENTS</h2>
