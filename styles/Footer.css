@@ -1,166 +1,154 @@
-
 * {
-    font-family: 'Prompt', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 footer {
-    border: none;
-
+  border: none;
 }
 
 #upper_box {
-
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #upper_InnerBox {
-    display: flex;
+  display: flex;
 
-    width: 80%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: auto;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
 }
 
-#upper_InnerBox>div {
-
-    width: 18%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+#upper_InnerBox > div {
+  width: 18%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-#upper_InnerBox>div:nth-child(5) {
-
-    width: 28%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+#upper_InnerBox > div:nth-child(5) {
+  width: 28%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-h3 {
-
-    color: #495156;
+#upper_InnerBox h3 {
+  color: #495156;
+  font-size: 16px;
 }
 
-#upper_InnerBox>div a {
-
-    font-size: 18px;
-    text-decoration: none;
-    color: #6c7981;
-    margin: 2px;
+#upper_InnerBox > div a {
+  text-decoration: none;
+  color: #6c7981;
+  margin: 1px;
+  font-size: 14px;
 }
 
 #DOWNLOAD_THE_APP img {
-    margin-top: 20px;
-    display: block;
-    width: 170px;
-    border-width: 0px;
+  margin-top: 20px;
+  display: block;
+  width: 170px;
+  border-width: 0px;
 }
 
 #but_sub {
-    display: block;
-    padding: 10px;
-    background-color: #99c655;
-    color: white;
-    font-size: 18px;
-    border: 2px solid white;
-    font-weight: box;
+  display: block;
+  padding: 6px;
+  background-color: #99c655;
+  color: white;
+  /* font-size: 18px; */
+  border: 2px solid white;
+  font-weight: box;
 }
 
 #inp {
-
-    width: 80%;
-    margin: 20px 0px;
-    font-size: 21px;
-    padding: 20px;
+  width: 80%;
+  margin: 20px 0px;
+  /* font-size: 21px; */
+  padding: 12px;
 }
-#paymant_apps{
-    width: 80%;
-    margin: auto;
-    display: flex;
+#paymant_apps {
+  width: 80%;
+  margin: auto;
+  display: flex;
 }
-#paymant_apps p{
-  padding: 30px;
-
-  letter-spacing: 3px;
+#paymant_apps p {
+  padding: 15px;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
-#paymant_apps img{
- width: 50%;
- height: 50px;
+#paymant_apps img {
+  width: 50%;
+  height: 30px;
 
- margin-top: 15px;
+  margin-top: 15px;
 }
 #paymant_apps #img_2_sy {
- width: 15%;
- height: 30px;
+  width: 15%;
+  height: 30px;
 
- margin-top: 27px;
- align-items: right;
+  margin-top: 15px;
+  align-items: right;
 }
 #paymant_apps #p_sy {
-margin-left: 200px;
+  margin-left: 200px;
 }
 
 hr {
-    width: 80%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
 /* Upper part done */
 
 /* Lower part done */
-#Lower_box{
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+#Lower_box {
+  width: 100%;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 }
-#Lower_InnerBox{
-    display: flex;
+#Lower_InnerBox {
+  display: flex;
 
-    width: 80%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: auto;
-    
+  width: 80%;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  margin: auto;
 }
-#Lower_InnerBox>div {
-
-    width: 18%;
-    /* padding-top: 20px; */
-    padding-bottom: 20px;
-
+#Lower_InnerBox div:nth-child(5) {
+  width: 20%;
 }
-#Lower_InnerBox>div>h3 {
-
- margin-top: 60px;
-
+#Lower_InnerBox > div {
+  width: 20%;
+  /* padding-top: 20px; */
+  padding-bottom: 20px;
 }
-#Lower_InnerBox>div>a{
-
-    font-size: 18px;
-    text-decoration: none;
-    color: #6c7981;
-    margin: 2px;
-
+#Lower_InnerBox > div > h3 {
+  margin-top: 60px;
+  font-size: 16px;
+}
+#Lower_InnerBox > div > a {
+  text-decoration: none;
+  color: #6c7981;
+  margin: 2px;
+  font-size: 14px;
 }
 
-#Lower_InnerBox>div>#Yu_hi{
-    margin-top: 60px;
+#Lower_InnerBox > div > #Yu_hi {
+  margin-top: 60px;
 }
-#Last_div{
-    width: 80%;
-    margin: auto;
-    text-align: center;
+#Last_div {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
-#Last_part{
-    font-size: 18px;
-    text-decoration: none;
-    color: #6c7981;
-    margin: 2px;
-    margin-left: 20%;
+#Last_part {
+  text-decoration: none;
+  color: #6c7981;
+  margin: 2px;
+  margin-left: 20%;
 }
+
