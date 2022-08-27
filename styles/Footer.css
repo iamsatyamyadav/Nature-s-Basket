@@ -111,3 +111,56 @@ hr {
     width: 80%;
     margin: auto;
 }
+/* Upper part done */
+
+/* Lower part done */
+#Lower_box{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#Lower_InnerBox{
+    display: flex;
+
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+}
+#Lower_InnerBox>div {
+
+    width: 18%;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+
+}
+#Lower_InnerBox>div>h3 {
+
+ margin-top: 60px;
+
+}
+#Lower_InnerBox>div>a{
+
+    font-size: 18px;
+    text-decoration: none;
+    color: #6c7981;
+    margin: 2px;
+
+}
+
+#Lower_InnerBox>div>#Yu_hi{
+    margin-top: 60px;
+}
+#Last_div{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#Last_part{
+    font-size: 18px;
+    text-decoration: none;
+    color: #6c7981;
+    margin: 2px;
+    margin-left: 20%;
+}
