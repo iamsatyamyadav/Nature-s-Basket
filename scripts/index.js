@@ -1,6 +1,6 @@
 // let slide=document.querySelector("#slider_box");
- import {NavBar} from '../components/navbar1.js'
- document.getElementById('NavBar').innerHTML = NavBar();
+//  import {NavBar} from '../components/navbar1.js'
+//  document.getElementById('NavBar').innerHTML = NavBar();
 let slider=document.querySelector("#slider");
 
 let img=[
