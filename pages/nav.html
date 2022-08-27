@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
+
+    <header>
+
+
     <div id="login_cont">
         <div>
             <p>Online Slots Availability</p>
@@ -19,8 +23,8 @@
         </div>
 
         <div id="log">
-            <p id="log" onclick="log()">Login</p>
-            <p onclick="register()">Register</p>
+            <p>Login</p>
+            <p>Register</p>
         </div>
 
     </div>
@@ -35,7 +39,7 @@
             <p>
                 <ion-icon name="pencil-outline"></ion-icon>
                 </span>
-                <span id="pChange">enter pin code</span>
+                <span id="pChange">Enter pin code</span>
         </button>
         <select name="select city" id="city">
             <option value="Mumbai">Mumbai</option>
@@ -61,7 +65,7 @@
             </span>
         </button>
 
-        <button onclick="cart()" id="cartB">
+        <button id="cartB">
             <span>
                 <ion-icon name="cart-outline"></ion-icon>
             </span>
@@ -74,28 +78,28 @@
             <input type='hidden' name='some_name_to_form' />
             <div class='hidden'>
 
-                <p value="Gift Hamper">Gift Hamper</p>
-                <p value="Fruit & Vegetables">Fruit & Vegetables</p>
-                <p value="Cheese,Meat & Fruit Platter">Cheese,Meat & Fruit Platter</p>
-                <p value="Delecatessen &Cheese">Delecatessen &Cheese</p>
-                <p value="International Cuisine">International Cuisine</p>
-                <p value="Health">Health</p>
-                <p value="Indian Grocery">Indian Grocery</p>
-                <p value="Confectionary &Patisserie">Confectionary &Patisserie</p>
-                <p value="Meats, Seafoods And Eggs">Meats, Seafoods And Eggs</p>
-                <p value="Snack Bar">Snack Bar</p>
-                <p value="Snacks & Beverages">Snacks & Beverages</p>
-                <p value="Breakfast, diary & Bakery">Breakfast, diary & Bakery</p>
-                <p value="Instant Meals & Aids">Instant Meals & Aids</p>
-                <p value="The Good Food Cafe">The Good Food Cafe</p>
-                <p value="Packing Material">Packing Material</p>
+                <p id="msm1" class="msm" value="Gift Hamper">Gift Hamper</p>
+                <p id="msm2" class="msm" value="Fruit & Vegetables">Fruit & Vegetables</p>
+                <p id="msm3" class="msm" value="Cheese,Meat & Fruit Platter">Cheese,Meat & Fruit Platter</p>
+                <p id="msm4" class="msm" value="Delecatessen &Cheese">Delecatessen &Cheese</p>
+                <p id="msm5"  class="msm" value="International Cuisine">International Cuisine</p>
+                <p id="msm6" class="msm" value="Health">Health</p>
+                <p id="msm7" class="msm" value="Indian Grocery">Indian Grocery</p>
+                <p id="msm8" class="msm" value="Confectionary &Patisserie">Confectionary &Patisserie</p>
+                <p id="msm9" class="msm" value="Meats, Seafoods And Eggs">Meats, Seafoods And Eggs</p>
+                <p id="msm10" class="msm" value="Snack Bar">Snack Bar</p>
+                <p id="msm11" class="msm" value="Snacks & Beverages">Snacks & Beverages</p>
+                <p id="msm12" class="msm" value="Breakfast, diary & Bakery">Breakfast, diary & Bakery</p>
+                <p id="msm13" class="msm" value="Instant Meals & Aids">Instant Meals & Aids</p>
+                <p id="msm14" class="msm" value="The Good Food Cafe">The Good Food Cafe</p>
+                <p id="msm15" class="msm" value="Packing Material">Packing Material</p>
             </div>
         </div>
 
         <p class="contHov">MY ORDERS</p>
-        <p onclick="gift()" class="contHov">GIFTING</p>
+        <p class="contHov">GIFTING</p>
         <p class="contHov">REWADRS</p>
-        <p onclick="blog()" class="contHov">BLOG</p>
+        <p class="contHov">BLOG</p>
         <p class="contHov">OFFERS</p>
         <p class="contHov">CONNOISSEUR'S SELECTION</p>
         <p class="contHov">BOOK STORE VISIT</p>
@@ -114,50 +118,427 @@
         <p>Entering your delivery pincode will allow us to show you the products available in your area and to ensure
             timely delivery.</p>
     </div>
+
+    <div id="parent_hov">
+
+        <div id="p1" class="xx">
+            <div>
+                <h3 id="head" class="hnav">Gift</h3>
+                <p id="p1">E Voucher</p>
+                <p id="p2">Bulk/custumised Gifting</p>
+                <p id="p3">Gift Voucher</p>
+                <p id="p4">All Hamper</p>
+                <p id="p5">seasonals</p>
+                <p id="p6">Beans &Brinjals</p>
+                <p id="p7">Broccoli &Cauliflower</p>
+                <p id="p8">Chillies,Garlic,Lemon & Ginger</p>
+                <p id="p9">Cut Vegetables & Salads</p>
+                <p id="p10">Gourd,Cucumber & Pumpkin</p>
+                <p id="p11">Herbs & Sprouts</p>
+                <p id="p12">Lettuce & Leafy</p>
+            </div>
+
+            <div id="jj">
+                <!-- <h3 id="head" class="hnav">Gift</h3> -->
+                <p id="p1">E Voucher</p>
+                <p id="p2">Bulk/custumised Gifting</p>
+                <p id="p3">Gift Voucher</p>
+                <p id="p4">All Hamper</p>
+                <p id="p5">seasonals</p>
+                <p id="p6">Beans &Brinjals</p>
+                <p id="p7">Broccoli &Cauliflower</p>
+                <p id="p8">Chillies,Garlic,Lemon & Ginger</p>
+                <p id="p9">Cut Vegetables & Salads</p>
+                <p id="p10">Gourd,Cucumber & Pumpkin</p>
+                <p id="p11">Herbs & Sprouts</p>
+                <p id="p12">Lettuce & Leafy</p>
+            </div>
+           
+            <img id="im" src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png"
+                alt="">
+        </div>
+
+
+        <div id="p2" class="xx">
+            <h3 class="hnav">Daily Vegetables</h3>
+            <p>seasonals</p>
+            <p>Beans &Brinjals</p>
+            <p>Broccoli &Cauliflower</p>
+            <p>Chillies,Garlic,Lemon & Ginger</p>
+            <p>Cut Vegetables & Salads</p>
+            <p>Gourd,Cucumber & Pumpkin</p>
+            <p>Herbs & Sprouts</p>
+            <p>Lettuce & Leafy</p>
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png" alt="">
+        </div>
+        <div id="p3" class="xx">
+            <h3 class="hnav">Party Platter</h3>
+            <p>Cheese Platter</p>
+            <p>Meat Platter</p>
+            <h3 class="hnav">Mini Platter</h3>
+            <p>Cheese Platter</p>
+            <p>Meat Platter</p>
+
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png" alt="">
+        </div>
+
+        <div id="p4" class="xx">
+            <h3 class="hnav">Daily Vegetables</h3>
+            <p>seasonals</p>
+            <p>Beans &Brinjals</p>
+            <p>Broccoli &Cauliflower</p>
+            <p>Chillies,Garlic,Lemon & Ginger</p>
+            <p>Cut Vegetables & Salads</p>
+            <p>Gourd,Cucumber & Pumpkin</p>
+            <p>Herbs & Sprouts</p>
+            <p>Lettuce & Leafy</p>
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png" alt="">
+        </div>
+        <div id="p5" class="xx">
+            <h3 class="hnav">Party Platter</h3>
+            <p>Cheese Platter</p>
+            <p>Meat Platter</p>
+            <h3 class="hnav">Mini Platter</h3>
+            <p>Cheese Platter</p>
+            <p>Meat Platter</p>
+
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png" alt="">
+        </div>
+
+        <div id="p6" class="xx">
+            <div>
+                <h3 class="hnav">Daily Vegetables</h3>
+                <p>seasonals</p>
+                <p>Beans &Brinjals</p>
+                <p>Broccoli &Cauliflower</p>
+                <p>Chillies,Garlic,Lemon & Ginger</p>
+                <p>Cut Vegetables & Salads</p>
+                <p>Gourd,Cucumber & Pumpkin</p>
+                <p>Herbs & Sprouts</p>
+                <p>Lettuce & Leafy</p>
+            </div>
+            <div>
+                <h3 class="hnav">Daily Vegetables</h3>
+                <p>seasonals</p>
+                <p>Beans &Brinjals</p>
+                <p>Broccoli &Cauliflower</p>
+                <p>Chillies,Garlic,Lemon & Ginger</p>
+                <p>Cut Vegetables & Salads</p>
+                <p>Gourd,Cucumber & Pumpkin</p>
+                <p>Herbs & Sprouts</p>
+                <p>Lettuce & Leafy</p>
+            </div>
+        
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png" alt="">
+        </div>
+        <div id="p7" class="xx">
+            <h3 class="hnav">Party Platter</h3>
+            <p>Cheese Platter</p>
+            <p>Meat Platter</p>
+            <h3 class="hnav">Mini Platter</h3>
+            <p>Cheese Platter</p>
+            <p>Meat Platter</p>
+
+            <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png" alt="">
+        </div>
+
+        
+    </div>
+</header>
 </body>
+        
 
 </html>
-<script src="../nauseating-fowl-3676/scripts/nav.js"></script>
+<script src="nav.js"></script>
 
 <script>
 
-let div = document.getElementById("pop");
-let btn = document.getElementById("bTog");
+    let heading = document.getElementById("head").innerText="Gift"
+    let P1 = document.getElementById("p1").innerText;
+    let P2 = document.getElementById("p2").innerText;
+    let P3 = document.getElementById("p3").innerText;
 
-btn.addEventListener("click", () => {
-    if (div.style.display === "none") {
-        div.style.display = "block"
-    } else {
-        div.style.display = "none"
-    }
-})
+    
 
-function pinChange() {
+    let dd = document.querySelector("#p1");
+    let p = document.querySelector("#msm1");
 
-    let NewPin = document.getElementById("pinVal").value;
+    p.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Gift"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png"
+        }
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png"
+        }
 
-    let pin = document.getElementById("pChange").innerText = NewPin
-}
+    })
 
-function cart(){
-    window.location.href="linkcart.html"
-}
+    // let dd2 = document.getElementById("p1");
+    let p2 = document.querySelector("#msm2");
 
+    p2.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Daily Vegetables"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png"
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+        }
+    })
 
+    // let dd3 = document.getElementById("p1");
+    let p3 = document.querySelector("#msm3");
 
-    function blog(){
-    window.location.href="blogm.html"
-}
+    p3.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Party Platter"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png"
 
-function log(){
-    window.location.href="Login.html"
-}
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png"
+        }
+    })
 
-function register(){
-    window.location.href="Register.html"
-}
+    // let dd = document.getElementById("p1");
+    let p4 = document.querySelector("#msm4");
 
-function gift(){
-    window.location.href="gift.html"
-}
+    p4.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Beverages"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/confectionaryweb.png"
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+        }
+    })
+
+    // let dd5 = document.getElementById("p1");
+    let p5 = document.querySelector("#msm5");
+
+    p5.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            // dd2.style.display = "none"
+            // dd1.style.display = "none"
+            heading.innerText = "Meats, Seafoods And Eggs"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/fineteasweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png"
+        }
+    })
+
+    // let dd6 = document.getElementById("p1");
+    let p6 = document.querySelector("#msm6");
+
+    p6.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            // dd2.style.display = "none"
+            // dd1.style.display = "none"
+            heading.innerText = "Seasonals"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Readytoeatweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Readytoeatweb.png"
+        }
+    })
+
+    // let dd7 = document.getElementById("p1");
+    let p7 = document.querySelector("#msm7");
+
+    p7.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            // dd2.style.display = "none"
+            // dd1.style.display = "none"
+            heading.innerText = "Snacks & Beverages"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+
+    // let dd8 = document.getElementById("p1");
+    let p8 = document.querySelector("#msm8");
+
+    p8.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Seasonals"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+
+    let p9 = document.querySelector("#msm9");
+
+    p9.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Seasonals"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+
+    let p10 = document.querySelector("#msm10");
+
+    p10.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Indian Grocery"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+
+    let p11 = document.querySelector("#msm11");
+
+    p11.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Seasonals"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+
+    let p12 = document.querySelector("#msm12");
+
+    p12.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Snack Bar"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+
+    let p13 = document.querySelector("#msm13");
+
+    p13.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Instant Meals & Aids"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+
+    let p14 = document.querySelector("#msm14");
+
+    p14.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "The Good Food Cafe"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+
+    let p15 = document.querySelector("#msm15");
+
+    p15.addEventListener("mouseover", () => {
+        let avatar=document.getElementById("im")
+        let heading = document.getElementById("head");
+        if (dd.style.display === "none") {
+            dd.style.display = "block"
+            heading.innerText = "Packing Material"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png"
+
+        } 
+        else {
+            dd.style.display = "none"
+            heading.innerText="Meat"
+            avatar.src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/bespokeweb.png"
+        }
+    })
+   
+// }
 </script>
