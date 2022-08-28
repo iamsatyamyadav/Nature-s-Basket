@@ -2,6 +2,16 @@
     font-family: arial;
     box-sizing: border-box;
 }
+body{
+    /* width: 80%; */
+    /* margin: auto; */
+ 
+}
+/* header{
+    width: 95%;
+    margin: auto;
+
+} */
 
 #login_cont {
     width: 60%;
@@ -15,10 +25,13 @@
 }
 #login_cont>div>p {
     font-size: 12px;
+    margin-right: 80px;
 }
 #log{
     /* border: 2px solid black; */
     margin-left: -5%;
+    /* padding-top: 30px; */
+    /* margin-top: 20px; */
 }
 #log>p{
     font-size: 12px;
@@ -32,6 +45,7 @@
 }
 #logo{
 width: 280px;
+margin-top: 20px;
 }
 
 #city {
@@ -105,6 +119,10 @@ div.select:hover {
     background: #80bc36;
     cursor: pointer;
 }
+div.select:hover {
+    background: #80bc36;
+    cursor: pointer;
+}
 
 #cont_option{
     border: 1px solid rgb(216, 207, 207);
@@ -116,7 +134,62 @@ div.select:hover {
 #cont_option>p{
     font-size: 14px;
 }
+.contHov{
+ margin-top: 5px;
+}
 .contHov:hover{
 cursor: pointer;
 background-color: rgb(214, 206, 206);
 }
+
+#pop{
+    width: 700px;
+    border: 1px solid teal;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+#ppBtn{
+    padding: 5px 30px;
+    background-color: #80bc36;
+    border: none;
+    border-radius: 15px;
+}
+#pop>p{
+    font-size: 12px;
+    color: grey;
+}
+
+.xx{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    border: 1px solid green;
+    margin-left: 16%;
+    display: none;
+    position: relative;
+}
+.xx>img{
+   margin-left: 70%;
+   margin-top: -5%;
+   width: 200px;
+   height: 200px;
+}
+.hnav{
+    color: #80bc36;
+}
+.xx>p{
+    font-size: 14px;
+    margin-bottom: 0.5%;
+}
+#jj{
+    margin-top: -27%;
+    margin-left: 30%;
+}
+
+
+
+

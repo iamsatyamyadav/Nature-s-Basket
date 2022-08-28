@@ -17,3 +17,15 @@ function Login(){
 
 
 export default Login
+
+// for your Help 
+
+// Html File 
+{/* <button id="login_but">login</button> */}
+
+// In Js file
+
+// import Login from "../components/Login.js"
+
+// document.getElementById("Lonin_div").innerHTML= Login()
+
