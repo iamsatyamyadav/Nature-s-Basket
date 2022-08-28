@@ -16,10 +16,10 @@ function display(arrdata) {
     let divs = document.createElement("div");
     divs.setAttribute("class", "cart-item cart-column");
     let img = document.createElement("img");
-    img.src=el.img
+    img.src=el.image;
     img.setAttribute("class", "cart-item-image");
     let span1 = document.createElement("span");
-    span1.innerText = el.name;
+    span1.innerText = el.title1;
     span1.setAttribute("class", "cart-item-title");
     divs.append(img, span1);
 
