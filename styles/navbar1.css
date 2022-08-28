@@ -78,6 +78,7 @@
     /* margin-right:-15px ; */
 }
 #enterpindiv {
+  position: relative;
     display: flex;
     padding:0px ;
     margin:0px 0px 0px 60px;
