@@ -70,7 +70,7 @@ btn4.onclick=function(){
 // .............................................................................................
 // .............................................................................................
     let shop_by_category_poster=document.querySelector("#shop_by_category_poster");
-    let arraylocal=JSON.parse(localStorage.getItem('addtomyorder'))||[];
+    let arraylocal=JSON.parse(localStorage.getItem('cartData'))||[];
 
     let arraydata=[
         {
@@ -142,7 +142,7 @@ btn4.onclick=function(){
 
         // arraydata.forEach(function(){
             arraylocal.push(arraydata[0]);
-            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            localStorage.setItem("cartData",JSON.stringify(arraylocal));
             // console.log(arraylocal);
         // })
         
@@ -152,7 +152,7 @@ btn4.onclick=function(){
 
         // arraydata.forEach(function(){
             arraylocal.push(arraydata[1]);
-            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            localStorage.setItem("cartData",JSON.stringify(arraylocal));
             // console.log(arraylocal);
         // })
         
@@ -161,7 +161,7 @@ btn4.onclick=function(){
 
         // arraydata.forEach(function(){
             arraylocal.push(arraydata[2]);
-            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            localStorage.setItem("cartData",JSON.stringify(arraylocal));
             // console.log(arraylocal);
         // })
         
@@ -170,7 +170,7 @@ btn4.onclick=function(){
 
         // arraydata.forEach(function(){
             arraylocal.push(arraydata[3]);
-            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            localStorage.setItem("cartData",JSON.stringify(arraylocal));
             // console.log(arraylocal);
         // })
         
@@ -179,7 +179,7 @@ btn4.onclick=function(){
 
         // arraydata.forEach(function(){
             arraylocal.push(arraydata[4]);
-            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            localStorage.setItem("cartData",JSON.stringify(arraylocal));
             // console.log(arraylocal);
         // })
         
@@ -188,7 +188,7 @@ btn4.onclick=function(){
 
         // arraydata.forEach(function(){
             arraylocal.push(arraydata[5]);
-            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            localStorage.setItem("cartData",JSON.stringify(arraylocal));
             // console.log(arraylocal);
         // })
         
@@ -199,7 +199,7 @@ btn4.onclick=function(){
         // arraydata.forEach(function(){
             arraylocal.push(arraydata[6]);
             // console.log(arraylocal);
-            localStorage.setItem("addtomyorder",JSON.stringify(arraylocal));
+            localStorage.setItem("cartData",JSON.stringify(arraylocal));
         // })
         
 

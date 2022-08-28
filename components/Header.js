@@ -14,14 +14,7 @@ function header(){
     return`
   <!--Navbar Starts Here-->
   <div class="s-pages">
-    <p> <a href="#">Online Slots Availabitily</a></p>
-    <span>|</span>
-    <p> <a href="#">Fresh & Fast</a></p>
-    <span>|</span>
-    <p> <a href="../pages/LocateStore.html">Store Locator</a></p>
-    <span>|</span>
-    <p> <a href="https://www.naturesbasket.co.in/NBL_Contact_Us.aspx">Contact us</a></p>
-    <span>|</span>
+
     <div class="s-login">
       <p >  <button id="login_but">login</button> </p>
       <span>|</span>
@@ -47,9 +40,9 @@ function header(){
       <button id="search_s"><i class="bi bi-search s-icon2"></i></button>
     </div>
       <div class="s-register">
-        <a href="./wishlist.html"><i class="bi bi-star-fill"></i></a>
+        <a href="./myorder.html"><i class="bi bi-star-fill"></i></a>
         <span>|</span>
-        <a href="./cart.html"><i class="bi bi-cart4"></i></a>
+        <a href="./linkcart.html"><i class="bi bi-cart4"></i></a>
        
      
       </div>
@@ -59,12 +52,11 @@ function header(){
   <!--Submenu and Sidebar-->
   <div id="s-sidebar">
     <p id="s-cat">SHOP BY CATEGORY &nbsp; <i class="bi bi-caret-down-fill"></i></p>
-    <p>PAST PURCHASES</p>
-    <p>GIFTING</p>
-    <p>REWARDS</p>
-    <p><a href="https://blog.naturesbasket.co.in/">BLOG</a></p>
-    <p>CONNOISSEUR'S SELECTION</p>
-    <p><a href="./bookstore.html">BOOK STORE VISIT</a></p>
+    <p><a href="./myorder.html">MY ORDERS</a></p>
+    <p><a  href="./gift.html">GIFTING</a></p>
+    <p><a href="./blogm.html">BLOG</a></p>
+    <p><a href="./LocateStore.html">STORE LOCATOR</a></p>
+    <p><a href="./contactus.html">CONTACT US</a></p>
   </div>
   <div class="container-fluid" id="s-container" hidden>
     <section class="section-content">

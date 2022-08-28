@@ -1,4 +1,4 @@
-let arrdata = JSON.parse(localStorage.getItem("cartmei")) || [];
+let arrdata = JSON.parse(localStorage.getItem("cartData")) || [];
 // let quant=localStorage.getItem('quantity') || 1;
 // quant=quant.toString()
 // console.log(typeof(quant));

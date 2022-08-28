@@ -1,4 +1,4 @@
-let datafromLS=JSON.parse(localStorage.getItem("addtomyorder"))||[];
+let datafromLS=JSON.parse(localStorage.getItem("cartData"))||[];
 // console.log(datafromLS);
 
 let row=document.querySelector(".row");
