@@ -78,35 +78,35 @@ btn4.onclick=function(){
             title:"DELIVERY IN 90 MINUTES",
             title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
             pc:"1Pc",
-            price:"Buy @ Rs.32.75/-"
+            price:" 32.75"
         },
         {
             image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/89fafabd-6784-4b32-a8e4-cc6b4d26d1b3_425x425.jpg",
             title:"DELIVERY IN 90 MINUTES",
             title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
             pc:"1Pc",
-            price:"Buy @ Rs.39.75/-"
+            price:" 39.75"
         },
         {
             image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/bd76ca3b-660c-4602-b7bb-ec9c8353c7cb_425x425.jpg",
             title:"DELIVERY IN 90 MINUTES",
             title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
             pc:"1Pc",
-            price:"Buy @ Rs.38.75/-"
+            price:" 38.75"
         },
         {
             image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/a8ecb31c-960f-4e5c-a7b1-5df2c822aeaf_425x425.jpg",
             title:"DELIVERY IN 90 MINUTES",
             title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
             pc:"1Pc",
-            price:"Buy @ Rs.37.75/-"
+            price:" 37.75"
         },
         {
             image:"https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/5e50d332-c96f-4aa0-bed5-2cd48138e3fe_425x425.jpg",
             title:"DELIVERY IN 90 MINUTES",
             title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
             pc:"1Pc",
-            price:"Buy @ Rs.38.75/-"
+            price:" 38.75"
         },
 
         {
@@ -114,7 +114,7 @@ btn4.onclick=function(){
             title:"DELIVERY IN 90 MINUTES",
             title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
             pc:"1Pc",
-            price:"Buy @ Rs.35.75/-"
+            price:" 35.75"
         },
 
         {
@@ -122,7 +122,7 @@ btn4.onclick=function(){
             title:"DELIVERY IN 90 MINUTES",
             title1:"Mamie Yova Lychee Stirred Yoghurt 90G",
             pc:"1Pc",
-            price:"Buy @ Rs.34.75/-"
+            price:" 34.75"
         },
     ];
 
