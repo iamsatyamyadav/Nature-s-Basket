@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/index.css">
+    <title>Gift Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+       
 
-    <link rel="stylesheet" href="../styles/mhome.css">
-        <link rel="stylesheet" href="../styles/navbar1.css">
+        <link rel="stylesheet" href="../styles/Footer.css">
+        <link rel="icon" href="https://gnbdevcdn.s3.amazonaws.com/Images/favicon.png">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../styles/NavbarOrignal.Css">
+
     <style>
 
         
@@ -83,9 +89,9 @@
         }
 
         #container{
-            width: 70%;
+            width: 60%;
             margin-left: 30%;
-            margin-top: -55%;
+            margin-top: -45%;
             display: grid;
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: auto;
@@ -134,6 +140,9 @@
 </head>
 
 <body>
+    <div id="header"></div>
+ 
+
     <div id="topImage">
         <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Web_Sup_1_Gift.png" alt="">
     </div>
@@ -237,12 +246,16 @@
     <div id="container"></div>
     
     <div id="ls">
-        <img src="a.png" alt="">
+        <img src="../images/a.png" alt="">
     </div>
+
+    <footer id="Footer_part_By_SY"></footer>
 </body>
 
 </html>
 <script>
+
+
 
 let data = [{
 img:
@@ -454,7 +467,7 @@ let content=document.getElementById("container");
 let cart_data=JSON.parse(localStorage.getItem("cartData"))||[];
 
 function append(){
-    data.forEach(function(el){
+    data.forEach(function(el,i){
     let card=document.createElement("div");
 
     let poster=document.createElement("img");
@@ -482,6 +495,7 @@ function append(){
 
 console.log(el)
 cart_data.push(el);
+alert("product added to cart")
 localStorage.setItem("cartData",JSON.stringify(cart_data));
 
 })
@@ -502,9 +516,13 @@ append()
 
 <script type="module" src="../scripts/Footer.js"></script>
 
+<!-- <script type="module" src="../scripts/Footer.js"></script> -->
+
 <script type="module">
      import {NavBar} from '../components/navbar1.js'
  document.getElementById('NavBar').innerHTML = NavBar();
 </script>
 
 
+<script type="module" src="../scripts/Navbar.js"></script>
+<script type="module" src="../scripts/Footer.js"></script>
