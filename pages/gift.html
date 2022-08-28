@@ -113,6 +113,7 @@
             border-radius: 8px;
             margin: 2%;
             border: none;
+            cursor: pointer;
         }
 
         #container>div>div>p {
@@ -497,12 +498,12 @@
             but.innerText = "Add";
             but.addEventListener("click", function () {
 
-                cartData.push(data[i]);
-                localStorage.setItem("cartData", JSON.stringify(cart_Data));
+                cart_data.push(el);
+                localStorage.setItem("cartData", JSON.stringify(cart_data));
 
-        console.log(i)
-        cart_data.push(data[i]);
-localStorage.setItem("cartData",JSON.stringify(cart_data));
+        console.log(el)
+        // cart_data.push(data[el]);
+// localStorage.setItem("cartData",JSON.stringify(cart_data));
 
             })
 
@@ -512,8 +513,9 @@ localStorage.setItem("cartData",JSON.stringify(cart_data));
 
             container.append(card)
         })
+        // localStorage.setItem("cartData",JSON.stringify(cart_data));
     }
-
+    localStorage.setItem("cartData",JSON.stringify(cart_data));
     append()
 
 </script>
