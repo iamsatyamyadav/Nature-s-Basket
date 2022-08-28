@@ -42,9 +42,9 @@ footer {
 }
 
 #upper_InnerBox > div a {
-  text-decoration: none;
+ text-decoration: none;
   color: #6c7981;
-  margin: 1px;
+ 
   font-size: 14px;
 }
 
@@ -131,9 +131,9 @@ hr {
   font-size: 16px;
 }
 #Lower_InnerBox > div > a {
-  text-decoration: none;
+   text-decoration: none;
   color: #6c7981;
-  margin: 2px;
+ 
   font-size: 14px;
 }
 

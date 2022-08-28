@@ -11,9 +11,9 @@ function header(){
     <p> <a href="https://www.naturesbasket.co.in/NBL_Contact_Us.aspx">Contact us</a></p>
     <span>|</span>
     <div class="s-login">
-      <p ><a href="./login.html">Login </a> </p>
+      <p >  <button id="login_but">login</button> </p>
       <span>|</span>
-      <p><a href="./login.html">Register</a></p>
+      <p> <button id="Register_but">Register</button></p>
     </div>
   </div>
   <nav class="navbar navbar-expand-lg,navbar-light, pt-0,mt-0" id="s-nav">
