@@ -1,3 +1,15 @@
+/*  HTMl
+ <div id="header"></div>
+*/
+/* css
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../styles/NavbarOrignal.Css">  
+*/
+/* js
+<script type="module" src="../scripts/Navbar.js"></script>
+*/
 function header(){
     return`
   <!--Navbar Starts Here-->
@@ -6,7 +18,7 @@ function header(){
     <span>|</span>
     <p> <a href="#">Fresh & Fast</a></p>
     <span>|</span>
-    <p> <a href="#">Store Locator</a></p>
+    <p> <a href="../pages/LocateStore.html">Store Locator</a></p>
     <span>|</span>
     <p> <a href="https://www.naturesbasket.co.in/NBL_Contact_Us.aspx">Contact us</a></p>
     <span>|</span>
