@@ -355,3 +355,9 @@ a:hover{
 #header{
     margin-top: 15px;
 }
+#Register_but{
+border: none;
+}
+#login_but{
+    border: none;
+}
