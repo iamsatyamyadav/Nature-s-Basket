@@ -25,16 +25,23 @@
         margin: 0; 
          box-sizing: border-box;
         position: relative; } */
-  
-/* #cartnav{
-    border-right: 1px solid #999;
-    float: left;
+  /* #starB{
     height: 30px;
-    margin: 0 0 0 8px;
-    padding: 2px 9px 0;
-    width: 20px;
-    
-} */
+    width: 40px;
+    padding: 0 10px;
+    border: 2px solid;
+  } */
+  #star_1{
+    height: 30px;
+    width: 55px;
+    padding: 0 10px;
+  }
+  #bag_1{
+    height: 30px;
+    width: 55px;
+    padding: 0 10px;
+  }
+
 #navstart{
     display: flex;
        /* border: 5px solid blue;    */
@@ -71,6 +78,7 @@
     /* margin-right:-15px ; */
 }
 #enterpindiv {
+  position: relative;
     display: flex;
     padding:0px ;
     margin:0px 0px 0px 60px;
@@ -140,6 +148,7 @@ border-right: none;
 
 /* word-spacing: 10px; */
 }
+<<<<<<< HEAD:pages/navbar1.css
 #starB{
     height: 30px;
 /* <<<<<<< Updated upstream
@@ -162,6 +171,8 @@ border-right: none;
     height: 100%;
     background-color: white;
 }
+=======
+>>>>>>> 70ca4b9d146ddd5409159ea2a55d3bff47aacf34:styles/navbar1.css
 #search{
     border:1px solid rgb(188, 177, 177) ; 
  border-left: none;
@@ -173,11 +184,15 @@ border-right: none;
     height:32px;
     text-align: center;
     z-index: 9999;
+<<<<<<< HEAD:pages/navbar1.css
 /* <<<<<<< Updated upstream */
      min-width: 550px;
 /* ======= */
      min-width: 660px;
 /* >>>>>>> Stashed changes */
+=======
+     min-width: 550px;
+>>>>>>> 70ca4b9d146ddd5409159ea2a55d3bff47aacf34:styles/navbar1.css
      font-weight: normal;
      font-family: "CeraPRO-Regular";
      background-color: #ffffff;

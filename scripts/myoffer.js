@@ -1,7 +1,6 @@
 let giftdata=[
   {
      img: "https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/5179afc6-856c-428c-8ff7-41ddcce41710_425x425.jpg" ,
-     
      name: "E-GIFT Voucher",
      quantity:"1",
      price: "5000",
@@ -184,7 +183,7 @@ productid:"r12",
   productID: "r21",    
 }
 ]
-let arrdata=JSON.parse(localStorage.getItem("cart_Data"))||[]
+let cart_data=JSON.parse(localStorage.getItem("cartData"))||[]
 display(giftdata)
 function display(giftdata){
  document.querySelector("#boundaryy").innerHTML=""
@@ -206,9 +205,9 @@ function display(giftdata){
        btn.setAttribute("class","cartthing")
        btn.addEventListener("click",function(){
          console.log(el)
-         arrdata.push(el)
+         cart_data.push(el)
          console.log(arrdata)
-         localStorage.setItem("cartmei",JSON.stringify(arrdata))
+         localStorage.setItem("cartData",JSON.stringify(cart_data))
          alert("Product added to cart")
        })
        divs.append(imgs,inner1,texts1,texts2,btn);

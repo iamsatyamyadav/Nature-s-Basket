@@ -1,8 +1,8 @@
 #mainnav {
-    border: 1px solid rgb(205, 201, 201);;
-    /* width: 88%; */
+    border: 1px solid rgb(205, 201, 201);
+    width: 100%;
     display: flex;
-    font-size: 15px;
+    font-size: 17px;
     margin: auto;
     margin-top: 00px;
     /* padding-bottom: 10px; */
@@ -15,7 +15,7 @@
     font-size:20px;
     letter-spacing: 2px;
     width: 16%;
-    background-color: #f3f3f3;
+    background-color: #f3f3f3
 
   }
   #mainnav>div:first-child>a{
@@ -352,7 +352,6 @@
     align-items: center;
     text-align: center;
   }
- 
   .heading:hover{
     background-color: rgb(205, 201, 201);
   }
@@ -371,6 +370,7 @@
     margin-left: -22px;
   }
   .opt{
+    position: relative;
     border: 1px solid rgb(205, 201, 201);
     height: 30px;
     font-size: 15px;
@@ -764,8 +764,8 @@
    
   #up {
     
-    height: 90px;
-    width: 800px;
+    height: 100px;
+    width: 1000px;
     padding-bottom: -30px;
     margin-top: 0px;
   }
@@ -952,7 +952,7 @@
     float: right;
     margin-top: -30px;
     margin-bottom: 20px;
-    margin-right: -40px;
+    
     justify-content: space-evenly;
     font-size: 14px;
     font-weight: lighter;
