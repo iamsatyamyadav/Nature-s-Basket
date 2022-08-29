@@ -23,7 +23,7 @@ function header(){
   </div>
   <nav class="navbar navbar-expand-lg,navbar-light, pt-0,mt-0" id="s-nav">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <a class="navbar-brand" href="../index.html">
         <img src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2" id="s-img">
       </a>
       <button class="s-pincode rounded-start "><i class="bi bi-pencil-fill fst-normal s-icon"> Enter Pin
@@ -40,9 +40,9 @@ function header(){
       <button id="search_s"><i class="bi bi-search s-icon2"></i></button>
     </div>
       <div class="s-register">
-        <a href="./myorder.html"><i class="bi bi-star-fill"></i></a>
+        <a href="../pages/myorder.html"><i class="bi bi-star-fill"></i></a>
         <span>|</span>
-        <a href="./linkcart.html"><i class="bi bi-cart4"></i></a>
+        <a href="../pages/linkcart.html"><i class="bi bi-cart4"></i></a>
        
      
       </div>
@@ -52,11 +52,11 @@ function header(){
   <!--Submenu and Sidebar-->
   <div id="s-sidebar">
     <p id="s-cat">SHOP BY CATEGORY &nbsp; <i class="bi bi-caret-down-fill"></i></p>
-    <p><a href="./myorder.html">MY ORDERS</a></p>
-    <p><a  href="./gift.html">GIFTING</a></p>
-    <p><a href="./blogm.html">BLOG</a></p>
-    <p><a href="./LocateStore.html">STORE LOCATOR</a></p>
-    <p><a href="./contactus.html">CONTACT US</a></p>
+    <p><a href="../pages/myorder.html">MY ORDERS</a></p>
+    <p><a  href="../pages/gift.html">GIFTING</a></p>
+    <p><a href="../pages/blogm.html">BLOG</a></p>
+    <p><a href="../pages/LocateStore.html">STORE LOCATOR</a></p>
+    <p><a href="../pages/contactus.html">CONTACT US</a></p>
   </div>
   <div class="container-fluid" id="s-container" hidden>
     <section class="section-content">
