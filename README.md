@@ -47,3 +47,7 @@ A Group project build by 4 Developers, executed in 4 Days.
 
 ## Contributers
 - **[Satyam Yadav](https://github.com/iamsatyamyadav)**
+- **[Ranbir Singh](https://github.com/sranbir392)**
+- **[Ajay Patil](https://github.com/ajaypatil1720)**
+- **[Gaurav Rai](https://github.com/gauravrai2783)**
+
