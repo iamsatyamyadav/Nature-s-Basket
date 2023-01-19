@@ -51,4 +51,4 @@ A Group project build by 4 Developers, executed in 4 Days.
 - **[Ajay Patil](https://github.com/ajaypatil1720)**
 - **[Gaurav Rai](https://github.com/gauravrai2783)**
 
-Thanks for Comming 😍😊....
+# 🤝 Thanks for taking the time to view our project! We hope that you found it interesting and informative.
