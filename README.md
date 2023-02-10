@@ -40,6 +40,9 @@ Created a clone of it with the functionalities of the original One.
 - **CSS**
 - **JavaScript**
 
+## Tools
+- **VS code**
+- **GitHub & Git**
 
 
 
